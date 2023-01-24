@@ -1,0 +1,38 @@
+{
+  "name": "@ons/design-system-react",
+  "description": "React version of the ONS Design System",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "ONS Digital"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie < 11",
+    "not ie_mob < 11",
+    "iOS >= 10.3",
+    "safari >= 12"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-terser": "^0.3.0",
+    "@svgr/rollup": "^6.5.1",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.10.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2"
+  }
+}
