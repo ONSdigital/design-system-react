@@ -9,12 +9,13 @@
     "name": "ONS Digital"
   },
   "scripts": {
-    "build": "export NODE_ENV=production; yarn clean && yarn build:docs && yarn build:examples",
+    "build": "export NODE_ENV=production; yarn clean && yarn build:docs && yarn build:styles && yarn build:examples",
     "build:docs": "typedoc --entryPoints src/index.ts --json ./dist/docs.json",
     "build:examples": "yarn build:examples:refresh && rollup -c rollup.config.examples.js",
     "build:examples:refresh": "node ./scripts/refresh-example-components.js",
+    "build:styles": "node ./scripts/build-styles.js",
     "clean": "rm -rf dist",
-    "start": "yarn build:examples && yarn start:dev-server",
+    "start": "yarn build:styles && yarn build:examples && yarn start:dev-server",
     "start:dev-server": "node ./lib/dev-server"
   },
   "browserslist": [
@@ -25,6 +26,7 @@
     "safari >= 12"
   ],
   "devDependencies": {
+    "@ons/design-system": "git+https://github.com/ONSdigital/design-system#61.0.4",
     "@rollup/plugin-commonjs": "^24.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-replace": "^5.0.2",
@@ -32,13 +34,16 @@
     "@svgr/rollup": "^6.5.1",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "autoprefixer": "^10.4.13",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "glob": "^8.1.0",
+    "postcss": "^8.4.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.10.0",
     "rollup-plugin-typescript2": "^0.34.1",
+    "sass": "^1.57.1",
     "typedoc": "^0.23.24",
     "typescript": "^4.9.4"
   },
