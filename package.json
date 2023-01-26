@@ -9,9 +9,13 @@
     "name": "ONS Digital"
   },
   "scripts": {
+    "build": "export NODE_ENV=production; yarn clean && yarn build:docs && yarn build:examples",
+    "build:docs": "typedoc --entryPoints src/index.ts --json ./dist/docs.json",
+    "build:examples": "yarn build:examples:refresh && rollup -c rollup.config.examples.js",
+    "build:examples:refresh": "node ./scripts/refresh-example-components.js",
     "clean": "rm -rf dist",
-    "build": "rollup -c",
-    "build-docs": "typedoc --entryPoints src/index.ts --json ./dist/docs.json"
+    "start": "yarn build:examples && yarn start:dev-server",
+    "start:dev-server": "node ./lib/dev-server"
   },
   "browserslist": [
     "last 2 versions",
@@ -28,6 +32,9 @@
     "@svgr/rollup": "^6.5.1",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "glob": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.10.0",
