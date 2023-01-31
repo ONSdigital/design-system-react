@@ -13,7 +13,7 @@
     "build:docs": "typedoc --entryPoints src/index.ts --json ./dist/docs.json",
     "build:examples": "yarn build:examples:refresh && rollup -c rollup.config.examples.js",
     "build:examples:refresh": "ts-node ./scripts/refresh-example-components",
-    "build:styles": "node ./scripts/build-styles.js",
+    "build:styles": "ts-node ./scripts/build-styles",
     "clean": "rm -rf dist",
     "start": "yarn build:styles && yarn build:examples && yarn start:dev-server",
     "start:dev-server": "node ./lib/dev-server",

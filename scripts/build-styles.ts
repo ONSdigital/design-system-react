@@ -4,7 +4,7 @@ import path from "path";
 import sass from "sass";
 import postcss from "postcss";
 
-function buildStylesheetAsync(entrypoint) {
+function buildStylesheetAsync(entrypoint: string): Promise<any> {
   console.log(`Processing stylesheet '${entrypoint}'...`);
 
   const options = {
@@ -19,29 +19,29 @@ function buildStylesheetAsync(entrypoint) {
   };
 
   return processSass(options)
-    .then(result => processSass(options, result))
+    .then(result => processSass(options))
     .then(result => processPostCss(options, result))
     .then(result => save(options, result));
 }
 
-async function processSass(options) {
+async function processSass(options: any) {
   return sass.renderSync(options);
 }
 
-async function processPostCss(options, { css, map }) {
+async function processPostCss(options: any, result: any) {
   const processor = postcss([ autoprefixer() ]);
-  return await processor.process(css, {
+  return await processor.process(result.css, {
     from: path.resolve(options.file),
     to: path.resolve(options.outFile),
-    map: { prev: map?.toString() },
+    map: { prev: result.map?.toString() },
   });
 }
 
-async function save(options, { css, map }) {
+async function save(options: any, result: any) {
   await fs.ensureDir(path.dirname(options.outFile));
-  await fs.writeFile(options.outFile, css);
+  await fs.writeFile(options.outFile, result.css);
   if (options.sourceMap) {
-    await fs.writeFile(`${options.outFile}.map`, map.toString());
+    await fs.writeFile(`${options.outFile}.map`, result.map.toString());
   }
 }
 
