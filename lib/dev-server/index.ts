@@ -18,6 +18,8 @@ const SAFE_PARAM_REGEX = /^[A-Za-z0-9_-]+$/;
 
 const app = express();
 
+// The following is needed to avoid Content-Security-Policy issues when accessing fonts
+// from the design system CDN.
 app.use(cors());
 
 app.get("/", (req, res) => {
