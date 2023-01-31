@@ -16,7 +16,7 @@
     "build:styles": "ts-node ./scripts/build-styles",
     "clean": "rm -rf dist",
     "start": "yarn build:styles && yarn build:examples && yarn start:dev-server",
-    "start:dev-server": "node ./lib/dev-server",
+    "start:dev-server": "ts-node ./lib/dev-server",
     "test": "jest"
   },
   "browserslist": [
@@ -34,6 +34,8 @@
     "@rollup/plugin-terser": "^0.3.0",
     "@svgr/rollup": "^6.5.1",
     "@testing-library/react": "^13.4.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.16",
     "@types/fs-extra": "^11.0.1",
     "@types/glob": "^8.0.1",
     "@types/jest": "^29.4.0",
