@@ -1,22 +1,22 @@
-import fs from "fs";
+import fs from "fs-extra";
 import glob from "glob";
 import path from "path";
 
 const componentExampleEntryPoints = glob.sync("./src/components/*/examples/*.tsx");
 const componentExampleEntries = componentExampleEntryPoints.map(entryPoint => {
-  const details = entryPoint.match(/components\/(?<component>[^\/]+)\/examples\/(?<example>[^\/]+)\.tsx/).groups;
+  const details = entryPoint.match(/components\/(?<component>[^\/]+)\/examples\/(?<example>[^\/]+)\.tsx/)?.groups;
   return {
     path: path.relative(path.resolve("./src"), entryPoint.replace(".tsx", "")),
-    constructorName: `${details.component}__${details.example.replace(/\-/g, "_")}`,
+    constructorName: `${details?.component}__${details?.example.replace(/\-/g, "_")}`,
   };
 });
 
 const generalExampleEntryPoints = glob.sync("./src/examples/*.tsx");
 const generalExampleEntries = generalExampleEntryPoints.map(entryPoint => {
-  const details = entryPoint.match(/examples\/(?<example>[^\/]+)\.tsx/).groups;
+  const details = entryPoint.match(/examples\/(?<example>[^\/]+)\.tsx/)?.groups;
   return {
     path: path.relative(path.resolve("./src"), entryPoint.replace(".tsx", "")),
-    constructorName: `GeneralExample__${details.example.replace(/\-/g, "_")}`,
+    constructorName: `GeneralExample__${details?.example.replace(/\-/g, "_")}`,
   };
 });
 
