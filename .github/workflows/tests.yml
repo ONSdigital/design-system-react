@@ -1,0 +1,21 @@
+name: Run tests
+on: [push]
+env:
+  RUNNING_ON_CI: true
+jobs:
+  run-tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Read .nvmrc file
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+      - name: Install dependencies
+        run: yarn install
+      - name: Run tests
+        run: yarn test
