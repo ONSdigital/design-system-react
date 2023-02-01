@@ -8,7 +8,7 @@ export interface HighlightProps {
 /**
  * An inline component to highlight inline text.
  *
- * @param props Component properties.
+ * @param props The component properties.
  * @returns
  */
 export default function Highlight(props: HighlightProps) : JSX.Element {

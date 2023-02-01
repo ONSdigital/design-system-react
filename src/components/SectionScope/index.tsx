@@ -24,7 +24,7 @@ export interface SectionScopeProps {
  * </section>
  * ```
  *
- * @param props The properties of the section scope.
+ * @param props The component properties.
  * @returns
  *
  * @see {@link Heading}

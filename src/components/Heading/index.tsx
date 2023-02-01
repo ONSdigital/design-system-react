@@ -32,7 +32,7 @@ export interface HeadingProps {
  * necessary the `level` property can be used to define a deeper level that is relative
  * to the current section scope.
  *
- * @param props The properties of the heading.
+ * @param props The component properties.
  * @returns
  *
  * @see {@link SectionScope}
