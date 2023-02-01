@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import Heading from ".";
 import SectionScope from "../SectionScope";
 
-describe("<Heading />", () => {
+describe("<Heading/>", () => {
   describe("prop: className", () => {
     it.each([ 1, 8 ])("outputs the provided classes when a relative heading of %d is provided", (headingLevel) => {
       render(
