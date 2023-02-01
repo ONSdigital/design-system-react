@@ -29,7 +29,7 @@ export interface SectionScopeProps {
  *
  * @see {@link Heading}
  */
-export default function SectionScope(props: SectionScopeProps) {
+export default function SectionScope(props: SectionScopeProps) : JSX.Element {
   const currentLevel = useContext(HeadingLevelContext);
   return <>
     <HeadingLevelContext.Provider value={currentLevel + 1}>

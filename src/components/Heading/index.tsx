@@ -37,7 +37,7 @@ export interface HeadingProps {
  *
  * @see {@link SectionScope}
  */
-export default function Heading(props: HeadingProps) {
+export default function Heading(props: HeadingProps) : JSX.Element {
     const baseLevel = useContext(HeadingLevelContext);
     const relativeLevel = props.level ?? 1;
     const resolvedLevel = baseLevel + relativeLevel - 1;
