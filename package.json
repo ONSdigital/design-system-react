@@ -9,7 +9,7 @@
     "name": "ONS Digital"
   },
   "scripts": {
-    "build": "export NODE_ENV=production; yarn clean && yarn build:docs && yarn build:styles && yarn build:examples",
+    "build": "export NODE_ENV=production; yarn clean && yarn build:examples && yarn build:docs && yarn build:styles",
     "build:docs": "typedoc --entryPoints src/index.ts --json ./dist/docs.json",
     "build:examples": "yarn build:examples:refresh && rollup -c rollup.config.examples.js",
     "build:examples:refresh": "ts-node ./scripts/refresh-example-components",
