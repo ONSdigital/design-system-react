@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dev-server/rendering loadTemplate(templatePath: string): string loads the template 1`] = `
+"<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}} - Example Template</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    {{body}}
+  </body>
+</html>
+"
+`;
+
+exports[`dev-server/rendering renderPage(template: string, params: any): string substitutes placeholder values 1`] = `
+"
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>An example page - Design System React</title>
+      <link rel="stylesheet" href="https://cdn.ons.gov.uk/sdc/design-system/61.0.4/css/main.css">
+      <link rel="stylesheet" href="/main.css">
+    </head>
+    <body class="an-example-body-class">
+      
+          <p>Example body content.</p>
+        
+    </body>
+  </html>
+"
+`;

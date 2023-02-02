@@ -14,6 +14,7 @@
     "build:examples": "yarn build:examples:refresh && rollup -c rollup.config.examples.js",
     "build:examples:refresh": "ts-node ./scripts/refresh-example-components",
     "build:styles": "ts-node ./scripts/build-styles",
+    "build-static-preview": "export NODE_ENV=production; yarn clean && yarn build:examples && yarn build:styles && ts-node ./scripts/build-static-preview",
     "clean": "rm -rf dist",
     "start": "yarn build:styles && yarn build:examples && yarn start:dev-server",
     "start:dev-server": "ts-node ./lib/dev-server",
