@@ -56,7 +56,7 @@ Tests can be filtered using the [`testNamePattern`](https://jestjs.io/docs/cli#-
 To run tests associated with a specific component:
 
 ```bash
-yarn test --testNamePattern="<Highlight/>""
+yarn test --testNamePattern="<Highlight/>"
 ```
 
 ## Build
