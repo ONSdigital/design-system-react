@@ -44,6 +44,6 @@ jobs:
         git commit -m "Update version to ${{ steps.version.output }}"
 
     - name: Push changes
-      uses: ad-m/github-push-action@main
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ env.GITHUB_TOKEN }}
