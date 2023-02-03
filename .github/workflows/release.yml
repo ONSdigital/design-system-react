@@ -1,4 +1,4 @@
-name: Release version
+name: Update Version
 
 on:
   pull_request:
@@ -12,38 +12,42 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check if PR title starts with "Create release:"
-      if: startsWith(github.event.pull_request.title, 'Create release:')
-      run: echo "PR title starts with 'Create release:', proceeding with update"
+    - name: Check if PR title starts with "Release -"
+      if: startsWith(github.event.pull_request.title, 'Release -')
+      run: echo "PR title starts with 'Release -', proceeding with update"
+      env:
+        pr_version: "$(echo "${{ github.event.pull_request.title }}" | grep -oE 'v[0-9]+\.[0-9]+\.[0-9]+')"
 
     - name: Checkout code
+      if: env.pr_version
       uses: actions/checkout@v2
 
-    - name: Get version from PR title
-      run: echo "$(echo "${{ github.event.pull_request.title }}" | grep -oE 'v[0-9]+\.[0-9]+\.[0-9]+')"
-      id: version
-
     - name: Update package.json with new version
+      if: env.pr_version
       run: |
-        sed -i "s/\"version\".*/\"version\": \"${{ steps.version.output }}\"/" package.json
+        sed -i "s/\"version\".*/\"version\": \"${{ env.pr_version }}\"/" package.json
         git diff
 
     - name: Update README with new version
+      if: env.pr_version
       run: |
-        sed -i "s/\/onsdigital\/design-system-react#.*/\/onsdigital\/design-system-react#${{ steps.version.output }}/" README.md
+        sed -i "s/\/onsdigital\/design-system-react#.*/\/onsdigital\/design-system-react#${{ env.pr_version }}/" README.md
         git diff
 
     - name: Run build command
+      if: env.pr_version
       run: yarn build-package
 
     - name: Commit changes
+      if: env.pr_version
       run: |
         git config --global user.email "action@github.com"
         git config --global user.name "Github Action"
         git add .
-        git commit -m "Update version to ${{ steps.version.output }}"
+        git commit -m "Update version to ${{ env.pr_version }}"
 
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      if: env.pr_version
+      uses: ad-m/github-push-action@v1.0.0
       with:
         github_token: ${{ env.GITHUB_TOKEN }}
