@@ -7,4 +7,7 @@ export { default as Heading__heading_relative_to_context } from "./components/He
 export { default as Heading__heading_root_context } from "./components/Heading/examples/heading-root-context"
 export { default as Heading__heading_with_section_scopes } from "./components/Heading/examples/heading-with-section-scopes"
 export { default as Highlight__paragraph_with_highlight } from "./components/Highlight/examples/paragraph-with-highlight"
+export { default as Quote__quote_with_longer_content } from "./components/Quote/examples/quote-with-longer-content"
+export { default as Quote__quote_with_source } from "./components/Quote/examples/quote-with-source"
+export { default as Quote__quote_without_source } from "./components/Quote/examples/quote-without-source"
 export { default as TextIndent__text_indent_with_paragraphs } from "./components/TextIndent/examples/text-indent-with-paragraphs"

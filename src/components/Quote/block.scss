@@ -1,0 +1,41 @@
+@import "../../styles/mixins/text.scss";
+
+.ds-quote {
+  position: relative;
+  margin: 0 0 1rem;
+  padding: 0 0 0 3em;
+
+  background-size: 2rem;
+}
+
+.ds-quote__icon {
+  position: absolute;
+  top: -0.125rem;
+  left: 0;
+  height: 1.85rem;
+  width: 1.85rem;
+
+  fill: var(--ons-color-grey-75);
+}
+
+.ds-quote__content {
+  margin: 0;
+}
+
+.ds-quote:not(.ds-quote--preserve-content-size) .ds-quote__content {
+  @include text-large;
+}
+
+.ds-quote__source {
+  @include text-small;
+
+  display: block;
+  position: relative;
+  margin-top: 0.5rem;
+
+  color: var(--ons-color-text-light);
+}
+
+.ds-quote__source::before {
+  content: "— ";
+}
