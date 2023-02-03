@@ -1,53 +1,39 @@
-name: Update Version
+name: Release
 
 on:
   pull_request:
     types: [opened]
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PR_TITLE: "${{ github.event.pull_request.title }}"
 
 jobs:
-  update-version:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check if PR title starts with "Release -"
-      if: startsWith(github.event.pull_request.title, 'Release -')
-      run: echo "PR title starts with 'Release -', proceeding with update"
-      env:
-        pr_version: "${{ (github.event.pull_request.title =~ /v[0-9]+\\.[0-9]+\\.[0-9]+/).captures[0] }}"
-
-    - name: Checkout code
-      if: env.pr_version
-      uses: actions/checkout@v2
-
-    - name: Update package.json with new version
-      if: env.pr_version
+    - name: Check PR title
+      if: startsWith(env.PR_TITLE, 'Release - v')
       run: |
-        sed -i "s/\"version\".*/\"version\": \"${{ env.pr_version }}\"/" package.json
-        git diff
+        echo "PR title is valid"
+        pr_version=$(echo "${{ env.PR_TITLE }}" | grep -Eo 'v[0-9]+\\.[0-9]+\\.[0-9]+')
+        echo "Extracted version: $pr_version"
 
-    - name: Update README with new version
-      if: env.pr_version
+    - name: Update version in package.json
       run: |
-        sed -i "s/\/ONSdigital\/design-system-react#.*/\/ONSdigital\/design-system-react#${{ env.pr_version }}/" README.md
-        git diff
+        echo "Updating version in package.json"
+        sed -i.bak "s/\"version\": \"[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+\"/\"version\": \"$pr_version\"/g" package.json
+
+    - name: Update version in README.md
+      run: |
+        echo "Updating version in README.md"
+        sed -i.bak "s/https:\/\/github.com\/ONSdigital\/design-system-react#v[0-9]\\+\\.[0-9]\\+\\.[0-9]\\+/https:\/\/github.com\/ONSdigital\/design-system-react#v$pr_version/g" README.md
 
     - name: Run build command
-      if: env.pr_version
       run: yarn build-package
 
-    - name: Commit changes
-      if: env.pr_version
-      run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "Github Action"
-        git add .
-        git commit -m "Update version to ${{ env.pr_version }}"
-
     - name: Push changes
-      if: env.pr_version
-      uses: ad-m/github-push-action@v1.0.0
+      uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ env.GITHUB_TOKEN }}
+        branch: ${{ github.head_ref }}
+        force: true
