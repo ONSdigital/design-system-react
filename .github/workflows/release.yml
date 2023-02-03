@@ -16,7 +16,7 @@ jobs:
       if: startsWith(github.event.pull_request.title, 'Release -')
       run: echo "PR title starts with 'Release -', proceeding with update"
       env:
-        pr_version: "$(echo "${{ github.event.pull_request.title }}" | grep -oE 'v[0-9]+\.[0-9]+\.[0-9]+')"
+        pr_version: "${{ (github.event.pull_request.title =~ /v[0-9]+\\.[0-9]+\\.[0-9]+/).captures[0] }}"
 
     - name: Checkout code
       if: env.pr_version
@@ -31,7 +31,7 @@ jobs:
     - name: Update README with new version
       if: env.pr_version
       run: |
-        sed -i "s/\/onsdigital\/design-system-react#.*/\/onsdigital\/design-system-react#${{ env.pr_version }}/" README.md
+        sed -i "s/\/ONSdigital\/design-system-react#.*/\/ONSdigital\/design-system-react#${{ env.pr_version }}/" README.md
         git diff
 
     - name: Run build command
