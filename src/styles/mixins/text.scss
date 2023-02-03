@@ -1,0 +1,11 @@
+@mixin text-large {
+  font-size: 1.3333333333rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@mixin text-small {
+  font-size: .7777777778rem;
+  font-weight: 400;
+  line-height: 1.4;
+}

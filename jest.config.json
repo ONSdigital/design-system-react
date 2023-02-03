@@ -1,13 +1,19 @@
 {
+  "setupFilesAfterEnv": [
+    "@testing-library/jest-dom"
+  ],
   "verbose": true,
   "testEnvironment": "jsdom",
   "transform": {
     ".(ts|tsx)": "ts-jest"
   },
-  "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+  "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
   "moduleFileExtensions": [
     "ts",
     "tsx",
     "js"
-  ]
+  ],
+  "moduleNameMapper": {
+    "\\.svg": "<rootDir>/__mocks__/svg.ts"
+  }
 }

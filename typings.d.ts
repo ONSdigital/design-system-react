@@ -1,9 +1,5 @@
-interface SvgrComponent
-  extends React.StatelessComponent<React.SVGAttributes<SVGElement>> {}
-
-declare module '*.svg' {
-  const svgUrl: string
-  const svgComponent: SvgrComponent
-  export default svgUrl
-  export { svgComponent as ReactComponent }
+declare module "*.svg" {
+  import React from "react";
+  const src: React.FC<React.SVGProps<SVGSVGElement>>;
+  export default src;
 }
