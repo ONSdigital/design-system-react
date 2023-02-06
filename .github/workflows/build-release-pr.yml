@@ -5,9 +5,6 @@ on:
     branches:
       - create/release
 
-env:
-  BRANCH_NAME: ${GITHUB_REF##*/}
-
 jobs:
   create-pr:
     name: Create PR
@@ -53,6 +50,6 @@ jobs:
           title: "Create release - v${{ env.PACKAGE_VERSION }}"
           body: "This PR includes changes for the release v${{ env.PACKAGE_VERSION }}."
           labels: "release"
-          branch: ${{ env.BRANCH_NAME }}
+          branch: create-release
           base: main
           
