@@ -1,0 +1,29 @@
+name: Create release PR
+
+on:
+  push:
+    branches:
+      - create/release
+
+jobs:
+  create_release_pr:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check if commit message starts with "Build release"
+      if: contains(github.event.head_commit.message, 'Build release')
+      run: |
+        echo "Commit message starts with 'Build release'"
+
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Create release PR"
+        branch: create/release
+        base: main
+        title: github.event.head_commit.message
+        labels: "release"

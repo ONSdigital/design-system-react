@@ -1,4 +1,4 @@
-name: Build Release
+name: Build
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - create/release
 
 jobs:
-  create-pr:
-    name: Create PR
+  build:
+    name: Build package and update version
     runs-on: ubuntu-latest
     
     steps:
