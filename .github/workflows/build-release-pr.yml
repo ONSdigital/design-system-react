@@ -6,7 +6,7 @@ on:
       - create/release
 
 env:
-  BRANCH_NAME: ${{ env.GITHUB_REF }}
+  BRANCH_NAME: ${GITHUB_REF##*/}
 
 jobs:
   create-pr:
