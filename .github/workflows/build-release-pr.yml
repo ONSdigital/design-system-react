@@ -55,7 +55,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: main
-      - name: Reset promotion branch
+          fetch-depth: 0
+      - name: Reset branch
         run: |
           git fetch origin create/release
           git reset --hard create/release
