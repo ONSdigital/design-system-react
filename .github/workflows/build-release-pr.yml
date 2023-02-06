@@ -50,5 +50,7 @@ jobs:
           title: "Create release - v${{ env.PACKAGE_VERSION }}"
           body: "This PR includes changes for the release v${{ env.PACKAGE_VERSION }}."
           labels: "release"
-          branch: create/release
+          branch-suffix: "random"
+          branch: "create/release"
+          base: "main"
           
