@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-import QuoteIcon from "../../assets/icon-quote.svg";
+import QuoteIcon from "../../icons/IconQuote";
 
 /**
  * Properties for the `Quote` component.

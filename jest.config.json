@@ -12,8 +12,5 @@
     "ts",
     "tsx",
     "js"
-  ],
-  "moduleNameMapper": {
-    "\\.svg": "<rootDir>/__mocks__/svg.ts"
-  }
+  ]
 }
