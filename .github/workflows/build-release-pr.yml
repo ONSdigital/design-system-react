@@ -19,7 +19,7 @@ jobs:
         
       - name: Get version from package.json
         id: get-version
-        run: echo "PACKAGE_VERSION::$(jq -r '.version' package.json)" >> $GITHUB_ENV
+        run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
         
       - name: Get current version from main branch
         id: get-current-version
