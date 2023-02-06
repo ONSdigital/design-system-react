@@ -1,0 +1,36 @@
+name: Publish release
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+env:
+  PR_TAG: "v$(jq -r '.version' package.json)"
+
+jobs:
+  merge_pr:
+    name: Merge PR to main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if label "release" is present
+        id: check_label
+        uses: actions/bin/filter@v1
+        with:
+          args: label release
+          pull_request: ${{ env.PULL_REQUEST }}
+      - name: Create tag and release
+        if: steps.check_label.outputs.result == 'true'
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.PR_TAG }}
+          release_name: ${{ env.PR_TAG }}
+          draft: false
+          prerelease: false
+          body: |
+            $(cat .github/release.yml)
+
