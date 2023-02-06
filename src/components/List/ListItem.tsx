@@ -1,0 +1,48 @@
+import classNames from "classnames";
+
+/**
+ * Properties for the `ListItem` component.
+ */
+export interface ListItemProps {
+  /**
+   * Custom classes for styling.
+   *
+   * @defaultValue `""`
+   */
+  className?: string;
+  /**
+   * Indicates if this is the current item of the list.
+   *
+   * @defaultValue `false`
+   */
+  current?: boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time' | undefined;
+  /**
+   * Child content to show inside the list item.
+   */
+  children: any;
+}
+
+/**
+ * Presents a list item.
+ *
+ * @param props The component properties.
+ * @returns
+ */
+export function ListItem(props: ListItemProps) : JSX.Element {
+  const isCurrentItem = !!props.current && props.current !== "false";
+
+  const classes = classNames("ds-list__item", {
+    "ds-list__item--current": isCurrentItem,
+  }, props.className);
+
+  const extraProps: React.LiHTMLAttributes<HTMLLIElement> = {};
+  if (isCurrentItem) {
+    extraProps["aria-current"] = props.current;
+  }
+
+  return <>
+    <li className={classes} {...extraProps}>
+      { props.children }
+    </li>
+  </>
+}

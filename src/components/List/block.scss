@@ -1,0 +1,43 @@
+.ds-list {
+  margin: 0 0 1rem;
+  padding: 0 0 0 1.5rem;
+}
+
+.ds-list__item:last-child {
+  margin-bottom: 0;
+}
+
+
+//----------------------------------------------------------------------------------------
+// variant: bare
+//----------------------------------------------------------------------------------------
+
+.ds-list--bare {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+//----------------------------------------------------------------------------------------
+// variant: dashed
+//----------------------------------------------------------------------------------------
+
+.ds-list--dashed {
+  padding-left: 0;
+  list-style: none;
+}
+
+.ds-list--dashed .ds-list__item {
+  margin-left: 25px;
+  position: relative;
+}
+
+.ds-list--dashed .ds-list__item::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 15px;
+  margin-left: -25px;
+  border-top: 1px solid var(--ons-color-black);
+}
