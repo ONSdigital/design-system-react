@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          ref: create/release
         
       - name: Get version from package.json
         id: get-version
@@ -29,7 +31,7 @@ jobs:
           ERROR_MESSAGE: "Package version is the same as HEAD."
         
       - name: Replace version in readme.md
-        run: sed -i "s/\(https:\/\/github.com\/ONSdigital\/design-system-react#\)v[0-9]\.[0-9]\.[0-9]/\1${{ env.PACKAGE_VERSION }}/g" README.md
+        run: sed -i "s/\(https:\/\/github.com\/ONSdigital\/design-system-react#\)v[0-9]\.[0-9]\.[0-9]/\1v${{ env.PACKAGE_VERSION }}/g" README.md
       
       - uses: actions/setup-node@v3
         with:
@@ -39,6 +41,25 @@ jobs:
       - name: Run yarn build-package
         run: yarn build-package
           
+      - name: Push changes to branch
+        uses: actions/github-script@v3
+        env:
+          PACKAGE_VERSION: ${{ env.PACKAGE_VERSION }}
+        with:
+          script: |
+            #!/bin/sh
+
+            set -e
+
+            BRANCH_NAME=create/release
+
+            git config --global user.email "github-actions@github.com"
+            git config --global user.name "GitHub Actions"
+
+            git add .
+            git commit -m "Create release - v$PACKAGE_VERSION"
+
+            git push origin $BRANCH_NAME
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
@@ -47,4 +68,3 @@ jobs:
           labels: "release"
           branch: "create/release"
           base: "main"
-          
