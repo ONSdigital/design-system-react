@@ -1,5 +1,5 @@
-import Heading from "..";
-import SectionScope from "../../SectionScope";
+import { Heading } from "..";
+import { SectionScope } from "../../SectionScope";
 
 export default () => <>
   <Heading>An example page heading</Heading>

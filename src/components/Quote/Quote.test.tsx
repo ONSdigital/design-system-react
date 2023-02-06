@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import Quote from ".";
+import { Quote } from ".";
 
 describe("<Quote/>", () => {
   describe("without a source reference", () => {

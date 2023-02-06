@@ -1,4 +1,4 @@
-import TextIndent from "..";
+import { TextIndent } from "..";
 
 export default () => <>
   <TextIndent>

@@ -1,2 +1,2 @@
-export { default as IconProps } from "./IconProps";
-export { default as IconQuote } from "./IconQuote";
+export * from "./IconProps";
+export * from "./QuoteIcon";

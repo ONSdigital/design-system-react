@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 
-import Heading from ".";
-import SectionScope from "../SectionScope";
+import { Heading } from ".";
+import { SectionScope } from "../SectionScope";
 
 describe("<Heading/>", () => {
   describe("prop: className", () => {
