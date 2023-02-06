@@ -1,7 +1,6 @@
 import commonjs from "@rollup/plugin-commonjs";
 import replace from "@rollup/plugin-replace";
 import resolve from "@rollup/plugin-node-resolve";
-import svgr from "@svgr/rollup";
 import terser from "@rollup/plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 
@@ -21,7 +20,6 @@ export default {
       "process.browser": true,
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
     }),
-    svgr(),
     resolve({
       browser: true
     }),
