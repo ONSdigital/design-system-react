@@ -38,13 +38,11 @@ jobs:
         run: yarn install
       - name: Run yarn build-package
         run: yarn build-package
-
-      - name: Create Pull Request
-        uses: devops-infra/action-pull-request@v0.5.3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: create/release
-          target_branch: main
-          title: "Create release - v${{ env.PACKAGE_VERSION }}"
-          body: "This PR includes changes for the release v${{ env.PACKAGE_VERSION }}."
-          label: release
+          
+      - name: Save changes and push to create/release branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Build release - v${{ env.PACKAGE_VERSION }}"
+          git push origin HEAD:create/release
