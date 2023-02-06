@@ -38,14 +38,6 @@ jobs:
         run: yarn install
       - name: Run yarn build-package
         run: yarn build-package
-          
-      - name: Save changes and push to create/release branch
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Build release - v${{ env.PACKAGE_VERSION }}"
-          git push origin HEAD:create/release
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
