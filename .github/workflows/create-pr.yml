@@ -7,14 +7,10 @@ on:
 
 jobs:
   create_release_pr:
+    if: contains(github.event.head_commit.message, 'Build release')
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check if commit message starts with "Build release"
-      if: contains(github.event.head_commit.message, 'Build release')
-      run: |
-        echo "Commit message starts with 'Build release'"
-
     - name: Checkout code
       uses: actions/checkout@v3
 
