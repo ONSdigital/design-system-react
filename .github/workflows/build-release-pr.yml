@@ -33,7 +33,12 @@ jobs:
         
       - name: Replace version in readme.md
         run: sed -i "s/\(https:\/\/github.com\/ONSdigital\/design-system-react#\)v[0-9]\.[0-9]\.[0-9]/\1${{ env.PACKAGE_VERSION }}/g" README.md
-        
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: yarn install
       - name: Run yarn build-package
         run: yarn build-package
         
@@ -51,3 +56,4 @@ jobs:
           labels: "release"
           head: ${{ env.BRANCH_NAME }}
           base: main
+          
