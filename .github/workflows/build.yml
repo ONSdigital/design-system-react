@@ -6,7 +6,7 @@ on:
       - create/release
 
 jobs:
-  build:
+  build_package:
     name: Build package and update version
     runs-on: ubuntu-latest
     
