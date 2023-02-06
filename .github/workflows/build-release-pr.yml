@@ -60,7 +60,8 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: "Create release PR"
-        branch: create/release-pr
-        base: create/release
+        branch: create/release
+        branch-suffix: random
+        base: main
         title: "Build release - v${{ env.PACKAGE_VERSION }}"
         labels: "release"
