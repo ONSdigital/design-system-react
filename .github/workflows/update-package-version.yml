@@ -2,13 +2,12 @@ name: Update package version
 
 on:
   pull_request:
-    types:
-      - labeled
+    branches:
+      - create/release
 
 jobs:
   update_package_version:
     name: Update package version
-    if: ${{ github.event.label.name == 'release' }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
