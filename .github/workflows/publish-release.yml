@@ -3,8 +3,6 @@ name: Publish release
 on:
   pull_request:
     types: [closed]
-    branches:
-      - create/release
 
 env:
   PR_TAG: "v$(jq -r '.version' package.json)"
