@@ -10,16 +10,16 @@ jobs:
     if: ${{ github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'create/release' && github.event.pull_request.merged == true }}
     runs-on: ubuntu-latest
     steps:
+      - name: Build Changelog
+        id: github_release
+        uses: mikepenz/release-changelog-builder-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Get version from package.json
         id: get-version
         run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
-      - name: Generate release notes
-        uses: docker://decathlon/release-notes-generator-action:2.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OUTPUT_FOLDER: temp_release_notes
       - name: Create tag and release
         id: create_release
         uses: actions/create-release@v1
@@ -30,5 +30,4 @@ jobs:
           release_name: "v${{ env.PACKAGE_VERSION }}"
           draft: false
           prerelease: false
-          body: |
-            $(cat .github/release.yml)
+          body: ""
