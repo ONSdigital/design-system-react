@@ -75,7 +75,10 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "GitHub Actions"
         git checkout create/release
-        git pull origin create/release --rebase
+        git config pull.ff only  
+        git stash
+        git pull origin create/release
+        git stash apply
         git add package.json
         git commit -m "Update package.json to version $PACKAGE_VERSION"
 
@@ -84,3 +87,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: create/release
+
