@@ -27,6 +27,12 @@ export interface AffixListProps {
    */
   type: AffixListType;
   /**
+   * Custom classes for styling.
+   *
+   * @defaultValue `""`
+   */
+  className?: string;
+  /**
    * The list items.
    */
   children: AffixListItemElements;
@@ -41,7 +47,7 @@ export interface AffixListProps {
 export function AffixList(props: AffixListProps) : JSX.Element {
   const classes = classNames("ds-affix-list", {
     [`ds-affix-list--${props.type}`]: true,
-  });
+  }, props.className);
 
   return <>
     <ul className={classes}>

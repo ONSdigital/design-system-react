@@ -36,6 +36,12 @@ export interface ListProps {
    */
   type?: ListType;
   /**
+   * Custom classes for styling.
+   *
+   * @defaultValue `""`
+   */
+  className?: string;
+  /**
    * The list items.
    */
   children: ListItemElements;
@@ -53,7 +59,7 @@ export function List(props: ListProps) : JSX.Element {
 
   const classes = classNames("ds-list", {
     [`ds-list--${type}`]: true,
-  });
+  }, props.className);
 
   return React.createElement(elementTag, {
     className: classes,
