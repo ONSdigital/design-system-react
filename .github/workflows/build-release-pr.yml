@@ -57,5 +57,5 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          message: "Update package.json to version $PACKAGE_VERSION"
+          message: "Update package.json to version ${{ env.PACKAGE_VERSION }}"
           tag_push: '--force'
