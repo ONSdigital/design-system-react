@@ -44,6 +44,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Create release PR"
+          body: "Automated pull request created for release v${{ env.PACKAGE_VERSION }}"
           branch: create/release
           base: main
           title: "Build release - v${{ env.PACKAGE_VERSION }}"
