@@ -1,0 +1,32 @@
+name: Update package version
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  update_package_version:
+    name: Update package version
+    runs-on: ubuntu-latest
+    needs: create_release_pr
+    if: ${{ github.event.label.name == 'release' }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Get version from PR title
+      id: get_version
+      run: |
+        echo "::set-output name=version::$(echo ${{ github.pull_request.title }} | grep -o -E 'v[0-9]+\.[0-9]+\.[0-9]+')"
+
+    - name: Update package.json
+      run: |
+        PACKAGE_VERSION=${{ steps.get_version.outputs.version }}
+        echo "Updating package.json to version $PACKAGE_VERSION"
+        jq ".version = \"$PACKAGE_VERSION\"" package.json > temp.json && mv temp.json package.json
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        message: "Update package.json to version $PACKAGE_VERSION"
+        tag_push: '--force'
