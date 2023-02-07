@@ -74,7 +74,7 @@ jobs:
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "GitHub Actions"
-        git pull
+        git config pull.ff only  
         git add package.json
         git commit -m "Update package.json to version $PACKAGE_VERSION"
 
