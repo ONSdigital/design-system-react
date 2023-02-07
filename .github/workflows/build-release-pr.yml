@@ -50,7 +50,6 @@ jobs:
           labels: "release"
 
       - name: Update package version
-        if: ${{ contains(github.event.label.name, 'release') }}
         run: |
           echo "Updating package.json to version $PACKAGE_VERSION"
           jq ".version = \"$PACKAGE_VERSION\"" package.json > temp.json && mv temp.json package.json
