@@ -48,7 +48,7 @@
 							"fileName": "components/Heading/index.tsx",
 							"line": 20,
 							"character": 4,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Heading/index.tsx#L20"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Heading/index.tsx#L20"
 						}
 					],
 					"type": {
@@ -77,7 +77,7 @@
 							"fileName": "components/Heading/index.tsx",
 							"line": 16,
 							"character": 4,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Heading/index.tsx#L16"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Heading/index.tsx#L16"
 						}
 					],
 					"type": {
@@ -106,7 +106,7 @@
 							"fileName": "components/Heading/index.tsx",
 							"line": 12,
 							"character": 4,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Heading/index.tsx#L12"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Heading/index.tsx#L12"
 						}
 					],
 					"type": {
@@ -130,7 +130,7 @@
 					"fileName": "components/Heading/index.tsx",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Heading/index.tsx#L8"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Heading/index.tsx#L8"
 				}
 			]
 		},
@@ -168,7 +168,7 @@
 							"fileName": "components/Highlight/index.tsx",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Highlight/index.tsx#L5"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Highlight/index.tsx#L5"
 						}
 					],
 					"type": {
@@ -190,7 +190,7 @@
 					"fileName": "components/Highlight/index.tsx",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Highlight/index.tsx#L4"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Highlight/index.tsx#L4"
 				}
 			]
 		},
@@ -214,7 +214,7 @@
 							"fileName": "icons/IconProps.ts",
 							"line": 2,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/icons/IconProps.ts#L2"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/icons/IconProps.ts#L2"
 						}
 					],
 					"type": {
@@ -236,7 +236,7 @@
 					"fileName": "icons/IconProps.ts",
 					"line": 1,
 					"character": 25,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/icons/IconProps.ts#L1"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/icons/IconProps.ts#L1"
 				}
 			]
 		},
@@ -274,7 +274,7 @@
 							"fileName": "components/Quote/index.tsx",
 							"line": 22,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Quote/index.tsx#L22"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Quote/index.tsx#L22"
 						}
 					],
 					"type": {
@@ -314,7 +314,7 @@
 							"fileName": "components/Quote/index.tsx",
 							"line": 20,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Quote/index.tsx#L20"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Quote/index.tsx#L20"
 						}
 					],
 					"type": {
@@ -354,7 +354,7 @@
 							"fileName": "components/Quote/index.tsx",
 							"line": 14,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Quote/index.tsx#L14"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Quote/index.tsx#L14"
 						}
 					],
 					"type": {
@@ -378,7 +378,7 @@
 					"fileName": "components/Quote/index.tsx",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Quote/index.tsx#L8"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Quote/index.tsx#L8"
 				}
 			]
 		},
@@ -416,7 +416,7 @@
 							"fileName": "components/SectionScope/index.tsx",
 							"line": 9,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/SectionScope/index.tsx#L9"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/SectionScope/index.tsx#L9"
 						}
 					],
 					"type": {
@@ -438,7 +438,7 @@
 					"fileName": "components/SectionScope/index.tsx",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/SectionScope/index.tsx#L8"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/SectionScope/index.tsx#L8"
 				}
 			]
 		},
@@ -476,7 +476,7 @@
 							"fileName": "components/TextIndent/index.tsx",
 							"line": 5,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/TextIndent/index.tsx#L5"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/TextIndent/index.tsx#L5"
 						}
 					],
 					"type": {
@@ -498,7 +498,7 @@
 					"fileName": "components/TextIndent/index.tsx",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/TextIndent/index.tsx#L4"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/TextIndent/index.tsx#L4"
 				}
 			]
 		},
@@ -513,7 +513,7 @@
 					"fileName": "components/Heading/index.tsx",
 					"line": 40,
 					"character": 24,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Heading/index.tsx#L40"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Heading/index.tsx#L40"
 				}
 			],
 			"signatures": [
@@ -638,7 +638,7 @@
 					"fileName": "components/Highlight/index.tsx",
 					"line": 14,
 					"character": 24,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Highlight/index.tsx#L14"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Highlight/index.tsx#L14"
 				}
 			],
 			"signatures": [
@@ -704,7 +704,7 @@
 					"fileName": "icons/IconQuote.tsx",
 					"line": 3,
 					"character": 24,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/icons/IconQuote.tsx#L3"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/icons/IconQuote.tsx#L3"
 				}
 			],
 			"signatures": [
@@ -748,7 +748,7 @@
 					"fileName": "components/Quote/index.tsx",
 					"line": 31,
 					"character": 24,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/Quote/index.tsx#L31"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/Quote/index.tsx#L31"
 				}
 			],
 			"signatures": [
@@ -814,7 +814,7 @@
 					"fileName": "components/SectionScope/index.tsx",
 					"line": 32,
 					"character": 24,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/SectionScope/index.tsx#L32"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/SectionScope/index.tsx#L32"
 				}
 			],
 			"signatures": [
@@ -895,7 +895,7 @@
 					"fileName": "components/TextIndent/index.tsx",
 					"line": 14,
 					"character": 24,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/components/TextIndent/index.tsx#L14"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/components/TextIndent/index.tsx#L14"
 				}
 			],
 			"signatures": [
@@ -980,7 +980,7 @@
 			"fileName": "index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/ONSdigital/design-system-react/blob/77c185e/src/index.ts#L1"
+			"url": "https://github.com/ONSdigital/design-system-react/blob/594b604/src/index.ts#L1"
 		}
 	]
 }
