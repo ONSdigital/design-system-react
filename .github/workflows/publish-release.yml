@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Get version from package.json
         id: get-version
         run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
@@ -28,7 +30,5 @@ jobs:
       - name: Build Changelog
         id: github_release
         uses: mikepenz/release-changelog-builder-action@v3
-        with:
-          fetch-depth: 0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
