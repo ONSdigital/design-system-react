@@ -15,6 +15,11 @@ jobs:
       - name: Get version from package.json
         id: get-version
         run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
+      - name: Generate release notes
+        uses: docker://decathlon/release-notes-generator-action:2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OUTPUT_FOLDER: temp_release_notes
       - name: Create tag and release
         id: create_release
         uses: actions/create-release@v1
