@@ -49,3 +49,14 @@ jobs:
           title: "Build release - v${{ env.PACKAGE_VERSION }}"
           labels: "release"
 
+      - name: Update package version
+        if: ${{ contains(github.event.label.name, 'release') }}
+        run: |
+          echo "Updating package.json to version $PACKAGE_VERSION"
+          jq ".version = \"$PACKAGE_VERSION\"" package.json > temp.json && mv temp.json package.json
+          
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update package.json to version $PACKAGE_VERSION"
+          tag_push: '--force'
