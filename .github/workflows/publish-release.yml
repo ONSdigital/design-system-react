@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - main
+      - create/release
 
 env:
   PR_TAG: "v$(jq -r '.version' package.json)"
