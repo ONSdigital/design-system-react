@@ -1,4 +1,4 @@
-name: Build Release
+name: Build and create release PR
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - create/release
 
 jobs:
-  create-pr:
-    name: Create PR
+  build_package:
+    name: Build package and update version
     runs-on: ubuntu-latest
     
     steps:
@@ -38,12 +38,46 @@ jobs:
         run: yarn install
       - name: Run yarn build-package
         run: yarn build-package
-          
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          title: "Create release - v${{ env.PACKAGE_VERSION }}"
-          body: "This PR includes changes for the release v${{ env.PACKAGE_VERSION }}."
-          labels: "release"
-          branch: "create/release"
-          base: "main"
+
+  create_release_pr:
+    name: Create release PR
+    runs-on: ubuntu-latest
+    needs: build_package
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Create release PR"
+        branch: create/release
+        base: main
+        title: "Build release - v${{ env.PACKAGE_VERSION }}"
+        labels: "release"
+  
+  update_package_version:
+    name: Update package version
+    runs-on: ubuntu-latest
+    needs: create_release_pr
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Update package.json
+      run: |
+        echo "Updating package.json to version $PACKAGE_VERSION"
+        jq ".version = \"$PACKAGE_VERSION\"" package.json > temp.json && mv temp.json package.json
+
+    - name: Commit changes
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "GitHub Actions"
+        git add package.json
+        git commit -m "Update package.json to version $PACKAGE_VERSION"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.9.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
