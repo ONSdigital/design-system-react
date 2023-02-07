@@ -7,9 +7,9 @@ on:
 jobs:
   update_package_version:
     name: Update package version
+    if: ${{ github.event.label.name == 'release' }}
     runs-on: ubuntu-latest
     needs: create_release_pr
-    if: ${{ github.event.label.name == 'release' }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
