@@ -38,34 +38,42 @@ jobs:
         run: yarn install
       - name: Run yarn build-package
         run: yarn build-package
-          
-      - name: Save changes and push to create/release branch
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Build release - v${{ env.PACKAGE_VERSION }}"
-          git push origin HEAD:create/release
 
   create_release_pr:
     name: Create release PR
     runs-on: ubuntu-latest
     needs: build_package
     steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: main
-          fetch-depth: 0
-      - name: Reset branch
-        run: |
-          git fetch origin create/release
-          git reset --hard create/release
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Create release PR"
-          branch: create/release-pr
-          base: main
-          title: "Build release - v${{ env.PACKAGE_VERSION }}"
-          labels: "release"
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Create release PR"
+        branch: create/release
+        base: main
+        title: "Build release - v${{ env.PACKAGE_VERSION }}"
+        labels: "release"
+  
+  update_package_version:
+    name: Update package.json version
+    runs-on: ubuntu-latest
+    needs: create_release_pr
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Update package version
+      run: |
+        echo "Updating package version to ${PACKAGE_VERSION}"
+        jq ".version = \"${PACKAGE_VERSION}\"" package.json > package.json.tmp
+        mv package.json.tmp package.json
+
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "Update package version to ${PACKAGE_VERSION}"
+        branch: create/release
+        push: true
