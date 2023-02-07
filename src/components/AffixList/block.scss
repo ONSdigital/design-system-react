@@ -1,0 +1,29 @@
+@import "@ons/design-system/src/scss/vars/_typography.scss";
+
+.ds-affix-list {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.ds-affix-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.ds-affix-list__prefix,
+.ds-affix-list__suffix {
+  font-family: $font-mono;
+}
+
+.ds-affix-list__prefix {
+  margin-right: 0.5rem;
+}
+
+.ds-affix-list__suffix {
+  margin-left: 0.5rem;
+}
+
+.ds-affix-list__item {
+  display: flex;
+  align-items: flex-start;
+}

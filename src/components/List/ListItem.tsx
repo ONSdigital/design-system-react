@@ -1,5 +1,7 @@
 import classNames from "classnames";
 
+import { ListItemCurrent } from "../../types/ListItemCurrent";
+
 /**
  * Properties for the `ListItem` component.
  */
@@ -15,7 +17,7 @@ export interface ListItemProps {
    *
    * @defaultValue `false`
    */
-  current?: boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time' | undefined;
+  current?: ListItemCurrent;
   /**
    * Child content to show inside the list item.
    */

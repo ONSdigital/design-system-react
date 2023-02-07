@@ -1,11 +1,10 @@
 import { render, screen } from "@testing-library/react";
 
 import { ListItem } from ".";
+import { ListItemCurrent } from "../../types/ListItemCurrent";
 
 describe("<ListItem/>", () => {
   describe("prop: current", () => {
-    type CurrentTypeValue = boolean | "false" | "true" | "page" | "step" | "location" | "date" | "time" | undefined;
-
     it("does not mark current item when `current` is not specified", () => {
       render(
         <ListItem>A non-current list item.</ListItem>
@@ -15,7 +14,7 @@ describe("<ListItem/>", () => {
     });
 
     it.each(
-      [ false, undefined ] as Array<CurrentTypeValue>
+      [ false, undefined ] as Array<ListItemCurrent>
     )("does not mark the current item when `current` is `%s`", (currentValue) => {
       render(
         <ListItem current={currentValue}>A non-current list item.</ListItem>
@@ -25,7 +24,7 @@ describe("<ListItem/>", () => {
     });
 
     it.each(
-      [ true, "true" ] as Array<CurrentTypeValue>
+      [ true, "true" ] as Array<ListItemCurrent>
     )("marks the current item when `current` is `%s`", (currentValue) => {
       render(
         <ListItem current={currentValue}>A current list item.</ListItem>
@@ -35,7 +34,7 @@ describe("<ListItem/>", () => {
     });
 
     it.each(
-      [ "page", "step", "location", "date", "time" ] as Array<CurrentTypeValue>
+      [ "page", "step", "location", "date", "time" ] as Array<ListItemCurrent>
     )("marks the current item when `current` is `%s`", (currentValue) => {
       render(
         <ListItem current={currentValue}>A current list item.</ListItem>
