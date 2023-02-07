@@ -2,9 +2,9 @@ import { render, screen } from "@testing-library/react";
 
 import { ListItem } from ".";
 
-describe("<List/>", () => {
+describe("<ListItem/>", () => {
   describe("prop: current", () => {
-    type CurrentTypeValue = boolean | 'false' | 'true' | 'page' | 'step' | 'location' | 'date' | 'time' | undefined;
+    type CurrentTypeValue = boolean | "false" | "true" | "page" | "step" | "location" | "date" | "time" | undefined;
 
     it("does not mark current item when `current` is not specified", () => {
       render(
