@@ -6,6 +6,11 @@
   list-style: none;
 }
 
+.ds-affix-list__item {
+  display: flex;
+  align-items: flex-start;
+}
+
 .ds-affix-list__item:last-child {
   margin-bottom: 0;
 }
@@ -21,9 +26,4 @@
 
 .ds-affix-list__suffix {
   margin-left: 0.5rem;
-}
-
-.ds-affix-list__item {
-  display: flex;
-  align-items: flex-start;
 }
