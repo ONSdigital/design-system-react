@@ -2,7 +2,8 @@ name: Update package version
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types:
+      - labeled
 
 jobs:
   update_package_version:
