@@ -19,6 +19,28 @@ jobs:
         uses: mikepenz/release-changelog-builder-action@v3
         with:
           toTag: ${{ github.sha }}
+          configurationJson: |
+            {
+              "template": "#{{CHANGELOG}}\n\n<details>\n<summary>Uncategorized</summary>\n\n#{{UNCATEGORIZED}}\n</details>",
+              "categories": [
+                {
+                    "title": "## ⚠️ Breaking changes",
+                    "labels": ["breaking-changes"]
+                },
+                {
+                    "title": "## 🆕 Enhancements",
+                    "labels": ["enhancement"]
+                },
+                {
+                    "title": "## 🪲 Bug",
+                    "labels": ["bug"]
+                },
+                {
+                    "title": "## ✔ Other changes",
+                    "labels": ["*"]
+                }
+              ]
+            }
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Get version from package.json
