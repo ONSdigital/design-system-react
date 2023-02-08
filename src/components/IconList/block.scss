@@ -1,0 +1,28 @@
+.ds-icon-list {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.ds-icon-list__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ds-icon-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.ds-icon-list__icon svg {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+}
+
+.ds-icon-list--before .ds-icon-list__icon {
+  margin-right: 0.5rem;
+}
+
+.ds-icon-list--after .ds-icon-list__icon {
+  margin-left: 0.5rem;
+}

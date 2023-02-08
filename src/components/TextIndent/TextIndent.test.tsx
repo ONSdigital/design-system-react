@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import TextIndent from ".";
+import { TextIndent } from ".";
 
 describe("<TextIndent/>", () => {
   it("outputs the expected text", () => {

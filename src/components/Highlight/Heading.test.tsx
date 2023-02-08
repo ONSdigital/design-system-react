@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import Highlight from ".";
+import { Highlight } from ".";
 
 describe("<Highlight/>", () => {
   it("outputs the expected text", () => {

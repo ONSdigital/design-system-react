@@ -1,4 +1,4 @@
-import Quote from "..";
+import { Quote } from "..";
 
 export default () => <>
   <Quote>
