@@ -19,13 +19,13 @@ export type IconListItemElement = React.ReactElement<typeof IconListItem>;
 export type IconListItemElements = Array<IconListItemElement> | IconListItemElement;
 
 /**
- * Properties for the `IconList` component.
+ * Properties for the {@link IconList} component.
  */
 export interface IconListProps {
   /**
    * Indicates how icons should be placed.
    *
-   * @defaultValue `IconListPlacement.Before`
+   * @defaultValue {@link IconListPlacement.Before}
    */
   placement?: IconListPlacement;
   /**

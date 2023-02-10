@@ -6,7 +6,7 @@ import { ListItemCurrent } from "../../types/ListItemCurrent";
 import { AffixListType } from "./AffixList";
 
 /**
- * Properties for the `AffixListItem` component.
+ * Properties for the {@link AffixListItem} component.
  */
 export interface AffixListItemProps {
   /**

@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { ListItemCurrent } from "../../types/ListItemCurrent";
 
 /**
- * Properties for the `ListItem` component.
+ * Properties for the {@link ListItem} component.
  */
 export interface ListItemProps {
   /**

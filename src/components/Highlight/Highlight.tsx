@@ -1,5 +1,5 @@
 /**
- * Properties for the `Highlight` component.
+ * Properties for the {@link Highlight} component.
  */
 export interface HighlightProps {
   /**

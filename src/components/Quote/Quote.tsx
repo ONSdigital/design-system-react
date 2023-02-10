@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { QuoteIcon } from "../../icons/QuoteIcon";
 
 /**
- * Properties for the `Quote` component.
+ * Properties for the {@link Quote} component.
  */
 export interface QuoteProps {
   /**

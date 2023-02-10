@@ -6,7 +6,7 @@ import { ListItemCurrent } from "../../types/ListItemCurrent";
 import { IconListPlacement } from "./IconList";
 
 /**
- * Properties for the `IconListItem` component.
+ * Properties for the {@link IconListItem} component.
  */
 export interface IconListItemProps {
   /**

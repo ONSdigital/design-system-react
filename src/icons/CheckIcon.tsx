@@ -1,5 +1,13 @@
 import { IconProps } from "./IconProps";
 
+/**
+ * Outputs a check icon.
+ *
+ * @see [Icons](/design-system/foundations/icons) for information on using icons.
+ *
+ * @param props The component properties.
+ * @returns
+ */
 export function CheckIcon(props: IconProps) : JSX.Element {
   return <>
     <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10" focusable="false" fill="currentColor">
