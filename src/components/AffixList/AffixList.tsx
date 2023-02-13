@@ -19,7 +19,7 @@ export type AffixListItemElement = React.ReactElement<typeof AffixListItem>;
 export type AffixListItemElements = Array<AffixListItemElement> | AffixListItemElement;
 
 /**
- * Properties for the `AffixList` component.
+ * Properties for the {@link AffixList} component.
  */
 export interface AffixListProps {
   /**
@@ -40,6 +40,8 @@ export interface AffixListProps {
 
 /**
  * Presents a list of affixed (prefixed or suffixed) items.
+ *
+ * @see {@link AffixListItem}
  *
  * @param props The component properties.
  * @returns

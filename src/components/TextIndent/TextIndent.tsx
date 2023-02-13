@@ -1,5 +1,5 @@
 /**
- * Properties for the `TextIndent` component.
+ * Properties for the {@link TextIndent} component.
  */
 export interface TextIndentProps {
   /**

@@ -26,13 +26,13 @@ export type ListItemElement = React.ReactElement<typeof ListItem>;
 export type ListItemElements = Array<ListItemElement> | ListItemElement;
 
 /**
- * Properties for the `List` component.
+ * Properties for the {@link List} component.
  */
 export interface ListProps {
   /**
    * Indicates the type of list.
    *
-   * @defaultValue `ListType.Bulleted`
+   * @defaultValue {@link ListType.Bulleted}
    */
   type?: ListType;
   /**
@@ -49,6 +49,8 @@ export interface ListProps {
 
 /**
  * Presents a list of items.
+ *
+ * @see {@link ListItem}
  *
  * @param props The component properties.
  * @returns
