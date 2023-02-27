@@ -50,7 +50,7 @@ const ASSISTIVE_TEXT_DEFAULTS = new Map<PanelType, string>([
   [PanelType.Announcement, "Announcement:"],
 ]);
 
-const ICON_LOOKUP_MAP = new Map<PanelType, any>([
+const ICON_DEFAULTS = new Map<PanelType, any>([
   [PanelType.Announcement, () => <ArrowForwardIcon />],
   [PanelType.Warning, () => <>!</>],
 ]);
@@ -63,26 +63,26 @@ const ICON_LOOKUP_MAP = new Map<PanelType, any>([
  */
 export function Panel(props: PanelProps): JSX.Element {
   const type = props.type ?? PanelType.Information;
-  const Icon = props.icon ?? ICON_LOOKUP_MAP.get(type);
+  const Icon = props.icon ?? ICON_DEFAULTS.get(type);
   const assistiveText = props.assistiveText ?? ASSISTIVE_TEXT_DEFAULTS.get(type);
 
-  const classes = classNames("ons-panel", {
-    [`ons-panel--${type}`]: true,
+  const classes = classNames("ons-panel ds-panel", {
+    [`ons-panel--${type} ds-panel--${type}`]: true,
   });
 
   return (
     <div className={classes}>
-      {Icon !== undefined && (
-        <div className="ons-panel__icon" aria-hidden="true">
-          <Icon />
-        </div>
-      )}
       {assistiveText && (
         <span className="ons-panel__assistive-text ons-u-vh">
           {assistiveText}
         </span>
       )}
-      <div className="ons-panel__body">{props.children}</div>
+      {Icon !== undefined && (
+        <div className="ons-panel__icon" aria-hidden="true">
+          <Icon />
+        </div>
+      )}
+      <div className="ons-panel__body ds-panel__body">{props.children}</div>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.ds-panel {
+  border-left: 8px solid transparent;
+  padding: 1rem;
+}
+
+.ds-panel--success {
+  background: var(--ons-color-success-tint);
+  border-color: var(--ons-color-success) !important;
+  outline: 1px solid transparent;
+}
+
+.ds-panel__body {
+  background: none;
+  padding: 0;
+}
