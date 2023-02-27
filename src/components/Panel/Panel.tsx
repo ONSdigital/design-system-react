@@ -78,7 +78,7 @@ export function Panel(props: PanelProps): JSX.Element {
         </span>
       )}
       {Icon !== undefined && (
-        <div className="ons-panel__icon" aria-hidden="true">
+        <div className="ons-panel__icon ds-panel__icon" aria-hidden="true">
           <Icon />
         </div>
       )}
