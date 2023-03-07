@@ -4,6 +4,9 @@ import React from "react";
 import { IconListItem } from "./IconListItem";
 import IconListContext from "../../contexts/IconListContext";
 
+/**
+ * @see {@link IconList}
+ */
 export enum IconListPlacement {
   /**
    * Show icon before each list item.

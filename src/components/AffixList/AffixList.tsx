@@ -4,6 +4,9 @@ import React from "react";
 import { AffixListItem } from "./AffixListItem";
 import AffixListContext from "../../contexts/AffixListContext";
 
+/**
+ * @see {@link AffixList}
+ */
 export enum AffixListType {
   /**
    * Show prefixes before each list item.

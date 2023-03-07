@@ -3,6 +3,9 @@ import React from "react";
 
 import { ListItem } from "./ListItem";
 
+/**
+ * @see {@link List}
+ */
 export enum ListType {
   /**
    * Show a bullet point to the side of each list item.
