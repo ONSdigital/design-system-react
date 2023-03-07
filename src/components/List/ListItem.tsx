@@ -27,10 +27,12 @@ export interface ListItemProps {
 /**
  * Presents a list item.
  *
- * @see {@link List}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link List}
+ *
+ * @experimental
  */
 export function ListItem(props: ListItemProps) : JSX.Element {
   const isCurrentItem = !!props.current && props.current !== "false";

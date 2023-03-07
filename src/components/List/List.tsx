@@ -50,10 +50,12 @@ export interface ListProps {
 /**
  * Presents a list of items.
  *
- * @see {@link ListItem}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link ListItem}
+ *
+ * @experimental
  */
 export function List(props: ListProps) : JSX.Element {
   const type = props.type ?? ListType.Bulleted;

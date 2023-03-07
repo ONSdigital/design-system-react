@@ -41,10 +41,12 @@ export interface AffixListProps {
 /**
  * Presents a list of affixed (prefixed or suffixed) items.
  *
- * @see {@link AffixListItem}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link AffixListItem}
+ *
+ * @experimental
  */
 export function AffixList(props: AffixListProps) : JSX.Element {
   const classes = classNames("ds-affix-list", {

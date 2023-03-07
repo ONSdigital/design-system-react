@@ -43,10 +43,12 @@ export interface IconListProps {
 /**
  * Presents a list of items with icons.
  *
- * @see {@link IconListItem}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link IconListItem}
+ *
+ * @experimental
  */
 export function IconList(props: IconListProps) : JSX.Element {
   const placement = props.placement ?? IconListPlacement.Before;

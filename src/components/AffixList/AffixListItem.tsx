@@ -37,10 +37,12 @@ export interface AffixListItemProps {
 /**
  * Presents an affixed list item.
  *
- * @see {@link AffixList}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link AffixList}
+ *
+ * @experimental
  */
 export function AffixListItem(props: AffixListItemProps) : JSX.Element {
   const affixListType = useContext(AffixListContext);

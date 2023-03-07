@@ -34,10 +34,12 @@ export interface IconListItemProps {
 /**
  * Presents an icon list item.
  *
- * @see {@link IconList}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link IconList}
+ *
+ * @experimental
  */
 export function IconListItem(props: IconListItemProps) : JSX.Element {
   const placement = useContext(IconListContext);
