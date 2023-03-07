@@ -34,6 +34,8 @@ export interface IconListItemProps {
 /**
  * Presents an icon list item.
  *
+ * @see {@link IconList}
+ *
  * @param props The component properties.
  * @returns
  */
