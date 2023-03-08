@@ -13,6 +13,8 @@ export interface HighlightProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @experimental
  */
 export function Highlight(props: HighlightProps) : JSX.Element {
   return <>

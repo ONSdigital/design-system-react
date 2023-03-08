@@ -4,6 +4,9 @@ import React from "react";
 import { IconListItem } from "./IconListItem";
 import IconListContext from "../../contexts/IconListContext";
 
+/**
+ * @see {@link IconList}
+ */
 export enum IconListPlacement {
   /**
    * Show icon before each list item.
@@ -43,10 +46,12 @@ export interface IconListProps {
 /**
  * Presents a list of items with icons.
  *
- * @see {@link IconListItem}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link IconListItem}
+ *
+ * @experimental
  */
 export function IconList(props: IconListProps) : JSX.Element {
   const placement = props.placement ?? IconListPlacement.Before;

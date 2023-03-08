@@ -29,6 +29,8 @@ export interface QuoteProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @experimental
  */
 export function Quote(props: QuoteProps) : JSX.Element {
   const classes = classNames("ds-quote", {

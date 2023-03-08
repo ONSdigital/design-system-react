@@ -32,6 +32,8 @@ export interface SectionScopeProps {
  * @returns
  *
  * @see {@link Heading}
+ *
+ * @experimental
  */
 export function SectionScope(props: SectionScopeProps) : JSX.Element {
   const currentLevel = useContext(HeadingLevelContext);

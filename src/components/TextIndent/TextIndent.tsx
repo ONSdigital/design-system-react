@@ -13,6 +13,8 @@ export interface TextIndentProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @experimental
  */
 export function TextIndent(props: TextIndentProps) : JSX.Element {
   return <>
