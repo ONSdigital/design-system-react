@@ -1,0 +1,60 @@
+name: Publish release
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  merge_pr:
+    name: Merge PR to main
+    if: ${{ github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'create/release' && github.event.pull_request.merged == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Build Changelog
+        id: build_changelog
+        uses: mikepenz/release-changelog-builder-action@v3
+        with:
+          toTag: ${{ github.sha }}
+          configurationJson: |
+            {
+              "template": "#{{CHANGELOG}}\n\n<details>\n<summary>Uncategorized</summary>\n\n#{{UNCATEGORIZED}}\n</details>",
+              "categories": [
+                {
+                    "title": "## ⚠️ Breaking changes",
+                    "labels": ["breaking-changes"]
+                },
+                {
+                    "title": "## 🆕 Enhancements",
+                    "labels": ["enhancement"]
+                },
+                {
+                    "title": "## 🪲 Bugs",
+                    "labels": ["bug"]
+                },
+                {
+                    "title": "## ✔ Other changes",
+                    "labels": ["*"]
+                }
+              ]
+            }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Get version from package.json
+        id: get-version
+        run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
+      - name: Create tag and release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: "v${{ env.PACKAGE_VERSION }}"
+          release_name: "v${{ env.PACKAGE_VERSION }}"
+          draft: false
+          prerelease: false
+          body: ${{steps.build_changelog.outputs.changelog}}
+
