@@ -1,0 +1,986 @@
+{
+	"id": 0,
+	"name": "@ons/design-system-react",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 1,
+			"name": "HeadingProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "code",
+						"text": "`Heading`"
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 4,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Child content to show inside the heading."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Heading/index.tsx",
+							"line": 20,
+							"character": 4,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Heading/index.tsx#L20"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 3,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Heading/index.tsx",
+							"line": 16,
+							"character": 4,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Heading/index.tsx#L16"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 2,
+					"name": "level",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Level of heading relative to the current section; defaults to 1."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Heading/index.tsx",
+							"line": 12,
+							"character": 4,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Heading/index.tsx#L12"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						4,
+						3,
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/Heading/index.tsx",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Heading/index.tsx#L8"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "HighlightProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "code",
+						"text": "`Highlight`"
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 9,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "components/Highlight/index.tsx",
+							"line": 5,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Highlight/index.tsx#L5"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						9
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/Highlight/index.tsx",
+					"line": 4,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Highlight/index.tsx#L4"
+				}
+			]
+		},
+		{
+			"id": 30,
+			"name": "IconProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"children": [
+				{
+					"id": 31,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "icons/IconProps.ts",
+							"line": 2,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/icons/IconProps.ts#L2"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						31
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "icons/IconProps.ts",
+					"line": 1,
+					"character": 25,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/icons/IconProps.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "QuoteProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "code",
+						"text": "`Quote`"
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 16,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "components/Quote/index.tsx",
+							"line": 22,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Quote/index.tsx#L22"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 15,
+					"name": "preserveContentSize",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates if the content size of the quoted content should be preserved."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`false`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Quote/index.tsx",
+							"line": 20,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Quote/index.tsx#L20"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 14,
+					"name": "source",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The source of the quote."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`null`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Quote/index.tsx",
+							"line": 14,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Quote/index.tsx#L14"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						16,
+						15,
+						14
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/Quote/index.tsx",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Quote/index.tsx#L8"
+				}
+			]
+		},
+		{
+			"id": 20,
+			"name": "SectionScopeProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "code",
+						"text": "`SectionScope`"
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 21,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "components/SectionScope/index.tsx",
+							"line": 9,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/SectionScope/index.tsx#L9"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						21
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/SectionScope/index.tsx",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/SectionScope/index.tsx#L8"
+				}
+			]
+		},
+		{
+			"id": 25,
+			"name": "TextIndentProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "code",
+						"text": "`TextIndent`"
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 26,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "components/TextIndent/index.tsx",
+							"line": 5,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/TextIndent/index.tsx#L5"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						26
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/TextIndent/index.tsx",
+					"line": 4,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/TextIndent/index.tsx#L4"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Heading",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/Heading/index.tsx",
+					"line": 40,
+					"character": 24,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Heading/index.tsx#L40"
+				}
+			],
+			"signatures": [
+				{
+					"id": 6,
+					"name": "Heading",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Outputs a heading relative to the current section scope.\n\nThis will typically output "
+							},
+							{
+								"kind": "code",
+								"text": "`<h1...6>`"
+							},
+							{
+								"kind": "text",
+								"text": " elements; however, this will revert to showing\nheadings using "
+							},
+							{
+								"kind": "code",
+								"text": "`<div>`"
+							},
+							{
+								"kind": "text",
+								"text": " elements with the accompanying "
+							},
+							{
+								"kind": "code",
+								"text": "`role`"
+							},
+							{
+								"kind": "text",
+								"text": " and "
+							},
+							{
+								"kind": "code",
+								"text": "`aria-level`"
+							},
+							{
+								"kind": "text",
+								"text": "\nattributes for headings deeper than "
+							},
+							{
+								"kind": "code",
+								"text": "`<h6>`"
+							},
+							{
+								"kind": "text",
+								"text": ". Applications should keep heading levels\nas shallow as possible.\n\nHeading levels are automatically computed from the scope of the current section. If\nnecessary the "
+							},
+							{
+								"kind": "code",
+								"text": "`level`"
+							},
+							{
+								"kind": "text",
+								"text": " property can be used to define a deeper level that is relative\nto the current section scope."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "SectionScope",
+										"target": 22
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 7,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 1,
+								"name": "HeadingProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "Highlight",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/Highlight/index.tsx",
+					"line": 14,
+					"character": 24,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Highlight/index.tsx#L14"
+				}
+			],
+			"signatures": [
+				{
+					"id": 11,
+					"name": "Highlight",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "An inline component to highlight inline text."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 12,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 8,
+								"name": "HighlightProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 32,
+			"name": "IconQuote",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "icons/IconQuote.tsx",
+					"line": 3,
+					"character": 24,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/icons/IconQuote.tsx#L3"
+				}
+			],
+			"signatures": [
+				{
+					"id": 33,
+					"name": "IconQuote",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"parameters": [
+						{
+							"id": 34,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"id": 30,
+								"name": "default"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 17,
+			"name": "Quote",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/Quote/index.tsx",
+					"line": 31,
+					"character": 24,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/Quote/index.tsx#L31"
+				}
+			],
+			"signatures": [
+				{
+					"id": 18,
+					"name": "Quote",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Use when quoting content."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 19,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 13,
+								"name": "QuoteProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 22,
+			"name": "SectionScope",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/SectionScope/index.tsx",
+					"line": 32,
+					"character": 24,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/SectionScope/index.tsx#L32"
+				}
+			],
+			"signatures": [
+				{
+					"id": 23,
+					"name": "SectionScope",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Defines the scope of a section.\n\nThis component is designed to be used alongside other sectioning elements; for instance,\nthe following would be a suitable usage:\n\n"
+							},
+							{
+								"kind": "code",
+								"text": "```tsx\n<section>\n  <SectionScope>\n    <Heading>Heading for this section</Heading>\n    <Heading level={2}>Sub heading within this section</Heading>\n  </SectionScope>\n</section>\n```"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "Heading",
+										"target": 5
+									}
+								]
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 24,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 20,
+								"name": "SectionScopeProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 27,
+			"name": "TextIndent",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/TextIndent/index.tsx",
+					"line": 14,
+					"character": 24,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/components/TextIndent/index.tsx#L14"
+				}
+			],
+			"signatures": [
+				{
+					"id": 28,
+					"name": "TextIndent",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Make information stand out from the rest of the content on a page."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 29,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 25,
+								"name": "TextIndentProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"children": [
+				1,
+				8,
+				30,
+				13,
+				20,
+				25
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				5,
+				10,
+				32,
+				17,
+				22,
+				27
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0,
+			"url": "https://github.com/ONSdigital/design-system-react/blob/98c4854/src/index.ts#L1"
+		}
+	]
+}
