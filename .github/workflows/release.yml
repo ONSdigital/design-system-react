@@ -6,48 +6,56 @@ on:
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+  GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
 jobs:
   update-version:
     runs-on: ubuntu-latest
+    if: startsWith(github.event.pull_request.title, 'Release v')
 
     steps:
-    - name: Check if PR title starts with "Release -"
-      if: startsWith(github.event.pull_request.title, 'Release -')
-      run: echo "PR title starts with 'Release -', proceeding with update"
-      env:
-        pr_version: "${{ (github.event.pull_request.title =~ /v[0-9]+\\.[0-9]+\\.[0-9]+/).captures[0] }}"
+    - name: Extract version from PR title
+      id: extract-version
+      run: |
+        pr_version=$(echo "${{ github.event.pull_request.title }}" | grep -oP "v[0-9]+(\.[0-9]+){2}")
+        echo "pr_version=$pr_version" >> $GITHUB_ENV
 
     - name: Checkout code
-      if: env.pr_version
       uses: actions/checkout@v2
 
+    - name: Import GPG key
+      run: |
+        echo "${{ env.GPG_PRIVATE_KEY }}" | gpg --import
+        echo "${{ env.GPG_KEY_ID }}" | gpg --import-ownertrust
+
+    - name: Configure Git for GPG signing
+      run: |
+        git config --global user.email "ons.design.system@ons.gov.uk"
+        git config --global user.name "ONS Design System"
+        git config --global user.signingkey "${{ env.GPG_KEY_ID }}"
+        git config --global commit.gpgsign true
+
     - name: Update package.json with new version
-      if: env.pr_version
       run: |
         sed -i "s/\"version\".*/\"version\": \"${{ env.pr_version }}\"/" package.json
         git diff
 
     - name: Update README with new version
-      if: env.pr_version
       run: |
         sed -i "s/\/ONSdigital\/design-system-react#.*/\/ONSdigital\/design-system-react#${{ env.pr_version }}/" README.md
         git diff
 
     - name: Run build command
-      if: env.pr_version
       run: yarn build-package
 
     - name: Commit changes
-      if: env.pr_version
       run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "Github Action"
         git add .
-        git commit -m "Update version to ${{ env.pr_version }}"
+        git commit -S -m "Update version to ${{ env.pr_version }}"
 
     - name: Push changes
-      if: env.pr_version
       uses: ad-m/github-push-action@v1.0.0
       with:
         github_token: ${{ env.GITHUB_TOKEN }}
+        force: true
