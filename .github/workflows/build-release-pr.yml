@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Get version from package.json
         id: get-version
@@ -31,13 +31,24 @@ jobs:
       - name: Replace version in readme.md
         run: sed -i "s/\(https:\/\/github.com\/ONSdigital\/design-system-react#\)v[0-9]\.[0-9]\.[0-9]/\1v${{ env.PACKAGE_VERSION }}/g" README.md
       
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: '14'
       - name: Install dependencies
         run: yarn install
       - name: Run yarn build-package
         run: yarn build-package
+
+      - name: Create release PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Create release PR"
+          body: "Automated pull request created for release v${{ env.PACKAGE_VERSION }}"
+          branch: create/release
+          base: main
+          title: "Build release - v${{ env.PACKAGE_VERSION }}"
+          labels: "release"
 
       - name: Update package version
         run: |
@@ -66,14 +77,3 @@ jobs:
           tag_push: "--force"
           push: true
           new_branch: ""
-
-      - name: Create release PR
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Create release PR"
-          body: "Automated pull request created for release v${{ env.PACKAGE_VERSION }}"
-          branch: create/release
-          base: main
-          title: "Build release - v${{ env.PACKAGE_VERSION }}"
-          labels: "release"
