@@ -42,13 +42,15 @@ jobs:
       - name: Create release PR
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
           commit-message: "Create release PR"
           body: "Automated pull request created for release v${{ env.PACKAGE_VERSION }}"
           branch: create/release
           base: main
           title: "Build release - v${{ env.PACKAGE_VERSION }}"
           labels: "release"
+          delete-branch: true
+          committer: ONS Design System <ons.design.system@ons.gov.uk>
 
       - name: Update package version
         run: |
