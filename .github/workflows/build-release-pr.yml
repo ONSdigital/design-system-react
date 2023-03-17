@@ -16,13 +16,23 @@ jobs:
       - name: Import GPG key
         run: |
           echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import --batch --yes
+          echo "${{ secrets.GPG_KEY_ID }}" | gpg --import-ownertrust
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
-      - name: Configure Git to use GPG key
+      - name: Start gpg-agent
+        run: gpg-connect-agent /bye
+
+      - name: Set GPG_TTY
+        run: echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
+
+      - name: Configure Git for GPG signing
         run: |
-          git config --global user.signingkey ${{ secrets.GPG_KEY_ID }}
-          git config --global commit.gpgSign true
+          git config --global user.email "ons.design.system@ons.gov.uk"
+          git config --global user.name "onsdesignsystem"
+          git config --global user.signingkey "${{ secrets.GPG_KEY_ID }}"
+          git config --global commit.gpgsign true
 
       - name: Get version from package.json
         id: get-version
@@ -57,7 +67,7 @@ jobs:
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          author_name: "ONS Design System"
+          author_name: "onsdesignsystem"
           author_email: "ons.design.system@ons.gov.uk"
           message: "Update package.json to version $PACKAGE_VERSION"
           commit: "-S"
