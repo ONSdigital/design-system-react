@@ -13,25 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Import GPG key
-        run: |
-          echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import --batch --yes
-          echo "trust-model always" | gpg --batch --yes --command-fd 0 --edit-key "${{ secrets.GPG_KEY_ID }}" trust quit
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
-      - name: Start gpg-agent
-        run: gpg-connect-agent /bye
-
-      - name: Set GPG_TTY
-        run: echo "GPG_TTY=$(tty)" >> $GITHUB_ENV
-
-      - name: Configure Git for GPG signing
-        run: |
-          git config --global user.email "ons.design.system@ons.gov.uk"
-          git config --global user.name "onsdesignsystem"
-          git config --global user.signingkey "${{ secrets.GPG_KEY_ID }}"
-          git config --global commit.gpgsign true
 
       - name: Get version from package.json
         id: get-version
@@ -62,7 +43,15 @@ jobs:
         run: |
           echo "Updating package.json to version $PACKAGE_VERSION"
           jq ".version = \"$PACKAGE_VERSION\"" package.json > temp.json && mv temp.json package.json
-          
+
+      - name: Import GPG key
+        uses: crazy-max/ghaction-import-gpg@v5
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true   
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
