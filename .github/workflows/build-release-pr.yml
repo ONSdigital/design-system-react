@@ -56,6 +56,9 @@ jobs:
           git_commit_gpgsign: true
           git_tag_gpgsign: true 
 
+      - name: Add changes
+        run: git add .
+
       - name: Commit changes
         run: git commit -S -m "Update package.json to version $PACKAGE_VERSION"
         env:
@@ -63,6 +66,10 @@ jobs:
           GIT_AUTHOR_EMAIL: ${{ steps.import-gpg.outputs.email }}
           GIT_COMMITTER_NAME: ${{ steps.import-gpg.outputs.name }}
           GIT_COMMITTER_EMAIL: ${{ steps.import-gpg.outputs.email }}
+
+      - name: Push changes
+        run: git push 
+        
       - name: Create release PR
         uses: peter-evans/create-pull-request@v4
         with:
