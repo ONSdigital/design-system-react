@@ -16,11 +16,10 @@ jobs:
       - name: Import GPG key
         run: |
           echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --import --batch --yes
-          echo "${{ secrets.GPG_KEY_ID }}" | gpg --import-ownertrust
+          echo "trust-model always" | gpg --command-fd 0 --edit-key "${{ secrets.GPG_KEY_ID }}" trust quit
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
-
       - name: Start gpg-agent
         run: gpg-connect-agent /bye
 
