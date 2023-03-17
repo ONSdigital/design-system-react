@@ -50,11 +50,12 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
           git_tag_gpgsign: true 
-          
+      - name: Debug PAT secret
+        run: echo ${{ secrets.GPG_PAT }}
       - name: Create release PR
         uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.GPG_PAT }}
           commit-message: "Create release PR"
           body: "Automated pull request created for release v${{ env.PACKAGE_VERSION }}"
           branch: create/release
