@@ -74,7 +74,7 @@ jobs:
         with:
           author_name: "ONS Design System"
           author_email: "ons.design.system@ons.gov.uk"
-          message: "Update package.json to version $PACKAGE_VERSION"
+          message: "Update package.json to version v${{ env.PACKAGE_VERSION }}"
           commit: "-S"
           tag_push: "--force"
           push: true
