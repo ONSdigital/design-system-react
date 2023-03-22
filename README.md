@@ -9,7 +9,7 @@
 ## Installing as a dependency
 
 ```bash
-yarn add @ons/design-system-react@git+https://github.com/ONSdigital/design-system-react#v1.0.0
+yarn add @ons/design-system-react@git+https://github.com/ONSdigital/design-system-react#v0.0.2
 ```
 
 ## Using nvm (optional)

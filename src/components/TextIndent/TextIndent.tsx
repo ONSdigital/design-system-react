@@ -1,5 +1,5 @@
 /**
- * Properties for the `TextIndent` component.
+ * Properties for the {@link TextIndent} component.
  */
 export interface TextIndentProps {
   /**
@@ -13,6 +13,8 @@ export interface TextIndentProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @experimental
  */
 export function TextIndent(props: TextIndentProps) : JSX.Element {
   return <>

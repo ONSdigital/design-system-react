@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { QuoteIcon } from "../../icons/QuoteIcon";
 
 /**
- * Properties for the `Quote` component.
+ * Properties for the {@link Quote} component.
  */
 export interface QuoteProps {
   /**
@@ -29,6 +29,8 @@ export interface QuoteProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @experimental
  */
 export function Quote(props: QuoteProps) : JSX.Element {
   const classes = classNames("ds-quote", {

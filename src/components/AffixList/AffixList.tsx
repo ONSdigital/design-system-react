@@ -4,6 +4,9 @@ import React from "react";
 import { AffixListItem } from "./AffixListItem";
 import AffixListContext from "../../contexts/AffixListContext";
 
+/**
+ * @see {@link AffixList}
+ */
 export enum AffixListType {
   /**
    * Show prefixes before each list item.
@@ -19,7 +22,7 @@ export type AffixListItemElement = React.ReactElement<typeof AffixListItem>;
 export type AffixListItemElements = Array<AffixListItemElement> | AffixListItemElement;
 
 /**
- * Properties for the `AffixList` component.
+ * Properties for the {@link AffixList} component.
  */
 export interface AffixListProps {
   /**
@@ -43,6 +46,10 @@ export interface AffixListProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link AffixListItem}
+ *
+ * @experimental
  */
 export function AffixList(props: AffixListProps) : JSX.Element {
   const classes = classNames("ds-affix-list", {

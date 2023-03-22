@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import HeadingLevelContext from "../../contexts/HeadingLevelContext";
 
 /**
- * Properties for the `Heading` component.
+ * Properties for the {@link Heading} component.
  */
 export interface HeadingProps {
     /**
@@ -27,6 +27,7 @@ export interface HeadingProps {
 /**
  * Outputs a heading relative to the current section scope.
  *
+ * @remarks
  * This will typically output `<h1...6>` elements; however, this will revert to showing
  * headings using `<div>` elements with the accompanying `role` and `aria-level`
  * attributes for headings deeper than `<h6>`. Applications should keep heading levels
@@ -38,6 +39,8 @@ export interface HeadingProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @experimental
  *
  * @see {@link SectionScope}
  */

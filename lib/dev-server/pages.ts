@@ -67,7 +67,7 @@ export function renderComponentExample(componentName: string, exampleName: strin
     designSystemVersion,
     title: `Example '${exampleName}' for component: ${componentName} - Components"`,
     body: `
-      <div data-example-class="${componentName}__${exampleName.replace(/\-/g, "_")}"></div>
+      <div data-react-example-name="${componentName}__${exampleName.replace(/\-/g, "_")}"></div>
       <script src="/design-system-react-examples.js"></script>
     `,
   });
@@ -78,7 +78,7 @@ export function renderGeneralExample(exampleName: string): string {
     designSystemVersion,
     title: `${exampleName} - General Examples"`,
     body: `
-      <div data-example-class="GeneralExample__${exampleName.replace(/\-/g, "_")}"></div>
+      <div data-react-example-name="GeneralExample__${exampleName.replace(/\-/g, "_")}"></div>
       <script src="/design-system-react-examples.js"></script>
     `,
   });

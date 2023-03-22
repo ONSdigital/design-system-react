@@ -3,7 +3,7 @@ import { useContext } from "react";
 import HeadingLevelContext from "../../contexts/HeadingLevelContext";
 
 /**
- * Properties for the `SectionScope` component.
+ * Properties for the {@link SectionScope} component.
  */
 export interface SectionScopeProps {
   /**
@@ -15,6 +15,7 @@ export interface SectionScopeProps {
 /**
  * Defines the scope of a section.
  *
+ * @remarks
  * This component is designed to be used alongside other sectioning elements; for instance,
  * the following would be a suitable usage:
  *
@@ -31,6 +32,8 @@ export interface SectionScopeProps {
  * @returns
  *
  * @see {@link Heading}
+ *
+ * @experimental
  */
 export function SectionScope(props: SectionScopeProps) : JSX.Element {
   const currentLevel = useContext(HeadingLevelContext);

@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { ListItemCurrent } from "../../types/ListItemCurrent";
 
 /**
- * Properties for the `ListItem` component.
+ * Properties for the {@link ListItem} component.
  */
 export interface ListItemProps {
   /**
@@ -29,6 +29,10 @@ export interface ListItemProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link List}
+ *
+ * @experimental
  */
 export function ListItem(props: ListItemProps) : JSX.Element {
   const isCurrentItem = !!props.current && props.current !== "false";

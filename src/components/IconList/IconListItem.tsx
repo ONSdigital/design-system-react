@@ -6,7 +6,7 @@ import { ListItemCurrent } from "../../types/ListItemCurrent";
 import { IconListPlacement } from "./IconList";
 
 /**
- * Properties for the `IconListItem` component.
+ * Properties for the {@link IconListItem} component.
  */
 export interface IconListItemProps {
   /**
@@ -36,6 +36,10 @@ export interface IconListItemProps {
  *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link IconList}
+ *
+ * @experimental
  */
 export function IconListItem(props: IconListItemProps) : JSX.Element {
   const placement = useContext(IconListContext);
