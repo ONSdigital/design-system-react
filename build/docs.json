@@ -1,0 +1,3215 @@
+{
+	"id": 0,
+	"name": "@ons/design-system-react",
+	"kind": 1,
+	"kindString": "Project",
+	"flags": {},
+	"originalName": "",
+	"children": [
+		{
+			"id": 4,
+			"name": "AffixListType",
+			"kind": 8,
+			"kindString": "Enumeration",
+			"flags": {},
+			"comment": {
+				"summary": [],
+				"blockTags": [
+					{
+						"tag": "@see",
+						"content": [
+							{
+								"kind": "inline-tag",
+								"tag": "@link",
+								"text": "AffixList",
+								"target": 1
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 5,
+					"name": "Prefixed",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Show prefixes before each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixList.tsx",
+							"line": 14,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L14"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "prefixed"
+					}
+				},
+				{
+					"id": 6,
+					"name": "Suffixed",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Show suffixes after each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixList.tsx",
+							"line": 18,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L18"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "suffixed"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration Members",
+					"children": [
+						5,
+						6
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/AffixList/AffixList.tsx",
+					"line": 10,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L10"
+				}
+			]
+		},
+		{
+			"id": 36,
+			"name": "IconListPlacement",
+			"kind": 8,
+			"kindString": "Enumeration",
+			"flags": {},
+			"comment": {
+				"summary": [],
+				"blockTags": [
+					{
+						"tag": "@see",
+						"content": [
+							{
+								"kind": "inline-tag",
+								"tag": "@link",
+								"text": "IconList",
+								"target": 33
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 38,
+					"name": "After",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Show icon after each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconList.tsx",
+							"line": 18,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L18"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "after"
+					}
+				},
+				{
+					"id": 37,
+					"name": "Before",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Show icon before each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconList.tsx",
+							"line": 14,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L14"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "before"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration Members",
+					"children": [
+						38,
+						37
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/IconList/IconList.tsx",
+					"line": 10,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L10"
+				}
+			]
+		},
+		{
+			"id": 56,
+			"name": "ListType",
+			"kind": 8,
+			"kindString": "Enumeration",
+			"flags": {},
+			"comment": {
+				"summary": [],
+				"blockTags": [
+					{
+						"tag": "@see",
+						"content": [
+							{
+								"kind": "inline-tag",
+								"tag": "@link",
+								"text": "List",
+								"target": 53
+							}
+						]
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 60,
+					"name": "Bare",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Do not show anything to the side of each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/List.tsx",
+							"line": 25,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L25"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "bare"
+					}
+				},
+				{
+					"id": 57,
+					"name": "Bulleted",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Show a bullet point to the side of each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/List.tsx",
+							"line": 13,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L13"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "bulleted"
+					}
+				},
+				{
+					"id": 58,
+					"name": "Dashed",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Show a dash to the side of each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/List.tsx",
+							"line": 17,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L17"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "dashed"
+					}
+				},
+				{
+					"id": 59,
+					"name": "Numbered",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Show a number to the side of each list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/List.tsx",
+							"line": 21,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L21"
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": "numbered"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration Members",
+					"children": [
+						60,
+						57,
+						58,
+						59
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/List/List.tsx",
+					"line": 9,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L9"
+				}
+			]
+		},
+		{
+			"id": 16,
+			"name": "AffixListItemProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "AffixListItem",
+						"target": 13
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 17,
+					"name": "affix",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The affix (eg. \"A1\").\n\nThis should not include any special characters for formatting; for example, use \"A1\"\nnot \"A1.\" since the component handles list formatting."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixListItem.tsx",
+							"line": 18,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixListItem.tsx#L18"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 20,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Child content to show inside the list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixListItem.tsx",
+							"line": 34,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixListItem.tsx#L34"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 18,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixListItem.tsx",
+							"line": 24,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixListItem.tsx#L24"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 19,
+					"name": "current",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates if this is the current item of the list."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`false`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixListItem.tsx",
+							"line": 30,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixListItem.tsx#L30"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 99,
+						"name": "ListItemCurrent"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						17,
+						20,
+						18,
+						19
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/AffixList/AffixListItem.tsx",
+					"line": 11,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixListItem.tsx#L11"
+				}
+			]
+		},
+		{
+			"id": 9,
+			"name": "AffixListProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "AffixList",
+						"target": 1
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 12,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The list items."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixList.tsx",
+							"line": 41,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L41"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 8,
+						"name": "AffixListItemElements"
+					}
+				},
+				{
+					"id": 11,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixList.tsx",
+							"line": 37,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L37"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 10,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates the type of affixes to show in the list."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/AffixList/AffixList.tsx",
+							"line": 31,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L31"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 4,
+						"name": "AffixListType"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						12,
+						11,
+						10
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/AffixList/AffixList.tsx",
+					"line": 27,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L27"
+				}
+			]
+		},
+		{
+			"id": 24,
+			"name": "HeadingProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "Heading",
+						"target": 21
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 27,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Child content to show inside the heading."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Heading/Heading.tsx",
+							"line": 24,
+							"character": 4,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Heading/Heading.tsx#L24"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 26,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Heading/Heading.tsx",
+							"line": 20,
+							"character": 4,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Heading/Heading.tsx#L20"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 25,
+					"name": "level",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Level of heading relative to the current section."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`1`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Heading/Heading.tsx",
+							"line": 14,
+							"character": 4,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Heading/Heading.tsx#L14"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						27,
+						26,
+						25
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/Heading/Heading.tsx",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Heading/Heading.tsx#L8"
+				}
+			]
+		},
+		{
+			"id": 31,
+			"name": "HighlightProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "Highlight",
+						"target": 28
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 32,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The highlighted content."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Highlight/Highlight.tsx",
+							"line": 8,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Highlight/Highlight.tsx#L8"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						32
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/Highlight/Highlight.tsx",
+					"line": 4,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Highlight/Highlight.tsx#L4"
+				}
+			]
+		},
+		{
+			"id": 48,
+			"name": "IconListItemProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "IconListItem",
+						"target": 45
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 52,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Child content to show inside the list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconListItem.tsx",
+							"line": 31,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconListItem.tsx#L31"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 50,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconListItem.tsx",
+							"line": 21,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconListItem.tsx#L21"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 51,
+					"name": "current",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates if this is the current item of the list."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`false`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconListItem.tsx",
+							"line": 27,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconListItem.tsx#L27"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 99,
+						"name": "ListItemCurrent"
+					}
+				},
+				{
+					"id": 49,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The icon."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconListItem.tsx",
+							"line": 15,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconListItem.tsx#L15"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						52,
+						50,
+						51,
+						49
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/IconList/IconListItem.tsx",
+					"line": 11,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconListItem.tsx#L11"
+				}
+			]
+		},
+		{
+			"id": 41,
+			"name": "IconListProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "IconList",
+						"target": 33
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 44,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The list items."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconList.tsx",
+							"line": 43,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L43"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 40,
+						"name": "IconListItemElements"
+					}
+				},
+				{
+					"id": 43,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconList.tsx",
+							"line": 39,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L39"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 42,
+					"name": "placement",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates how icons should be placed."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "Before",
+										"target": 37
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/IconList/IconList.tsx",
+							"line": 33,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L33"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 36,
+						"name": "IconListPlacement"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						44,
+						43,
+						42
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/IconList/IconList.tsx",
+					"line": 27,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L27"
+				}
+			]
+		},
+		{
+			"id": 91,
+			"name": "IconProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties that can be set on all icons."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 92,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "icons/IconProps.ts",
+							"line": 10,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/icons/IconProps.ts#L10"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						92
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "icons/IconProps.ts",
+					"line": 4,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/icons/IconProps.ts#L4"
+				}
+			]
+		},
+		{
+			"id": 70,
+			"name": "ListItemProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "ListItem",
+						"target": 67
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 73,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Child content to show inside the list item."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/ListItem.tsx",
+							"line": 24,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/ListItem.tsx#L24"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 71,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/ListItem.tsx",
+							"line": 14,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/ListItem.tsx#L14"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 72,
+					"name": "current",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates if this is the current item of the list."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`false`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/ListItem.tsx",
+							"line": 20,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/ListItem.tsx#L20"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 99,
+						"name": "ListItemCurrent"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						73,
+						71,
+						72
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/List/ListItem.tsx",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/ListItem.tsx#L8"
+				}
+			]
+		},
+		{
+			"id": 63,
+			"name": "ListProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "List",
+						"target": 53
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 66,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The list items."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/List.tsx",
+							"line": 50,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L50"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 62,
+						"name": "ListItemElements"
+					}
+				},
+				{
+					"id": 65,
+					"name": "className",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Custom classes for styling."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`\"\"`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/List.tsx",
+							"line": 46,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L46"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 64,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates the type of list."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "Bulleted",
+										"target": 57
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/List/List.tsx",
+							"line": 40,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L40"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"id": 56,
+						"name": "ListType"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						66,
+						65,
+						64
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/List/List.tsx",
+					"line": 34,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L34"
+				}
+			]
+		},
+		{
+			"id": 77,
+			"name": "QuoteProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "Quote",
+						"target": 74
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 80,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The quoted content."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Quote/Quote.tsx",
+							"line": 24,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Quote/Quote.tsx#L24"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 79,
+					"name": "preserveContentSize",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Indicates if the content size of the quoted content should be preserved."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`false`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Quote/Quote.tsx",
+							"line": 20,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Quote/Quote.tsx#L20"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 78,
+					"name": "source",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The source of the quote."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@defaultValue",
+								"content": [
+									{
+										"kind": "code",
+										"text": "`null`"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/Quote/Quote.tsx",
+							"line": 14,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Quote/Quote.tsx#L14"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						80,
+						79,
+						78
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/Quote/Quote.tsx",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Quote/Quote.tsx#L8"
+				}
+			]
+		},
+		{
+			"id": 84,
+			"name": "SectionScopeProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "SectionScope",
+						"target": 81
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 85,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Content of the section scope."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/SectionScope/SectionScope.tsx",
+							"line": 12,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/SectionScope/SectionScope.tsx#L12"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						85
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/SectionScope/SectionScope.tsx",
+					"line": 8,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/SectionScope/SectionScope.tsx#L8"
+				}
+			]
+		},
+		{
+			"id": 89,
+			"name": "TextIndentProps",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Properties for the "
+					},
+					{
+						"kind": "inline-tag",
+						"tag": "@link",
+						"text": "TextIndent",
+						"target": 86
+					},
+					{
+						"kind": "text",
+						"text": " component."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 90,
+					"name": "children",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "The indented content."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "components/TextIndent/TextIndent.tsx",
+							"line": 8,
+							"character": 2,
+							"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/TextIndent/TextIndent.tsx#L8"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						90
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "components/TextIndent/TextIndent.tsx",
+					"line": 4,
+					"character": 17,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/TextIndent/TextIndent.tsx#L4"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "AffixListItemElement",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/AffixList/AffixList.tsx",
+					"line": 21,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L21"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "query",
+						"queryType": {
+							"type": "reference",
+							"id": 13,
+							"name": "AffixListItem"
+						}
+					}
+				],
+				"name": "React.ReactElement",
+				"qualifiedName": "React.ReactElement",
+				"package": "@types/react"
+			}
+		},
+		{
+			"id": 8,
+			"name": "AffixListItemElements",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/AffixList/AffixList.tsx",
+					"line": 22,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L22"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 7,
+							"name": "AffixListItemElement"
+						}
+					},
+					{
+						"type": "reference",
+						"id": 7,
+						"name": "AffixListItemElement"
+					}
+				]
+			}
+		},
+		{
+			"id": 39,
+			"name": "IconListItemElement",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/IconList/IconList.tsx",
+					"line": 21,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L21"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "query",
+						"queryType": {
+							"type": "reference",
+							"id": 45,
+							"name": "IconListItem"
+						}
+					}
+				],
+				"name": "React.ReactElement",
+				"qualifiedName": "React.ReactElement",
+				"package": "@types/react"
+			}
+		},
+		{
+			"id": 40,
+			"name": "IconListItemElements",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/IconList/IconList.tsx",
+					"line": 22,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L22"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 39,
+							"name": "IconListItemElement"
+						}
+					},
+					{
+						"type": "reference",
+						"id": 39,
+						"name": "IconListItemElement"
+					}
+				]
+			}
+		},
+		{
+			"id": 99,
+			"name": "ListItemCurrent",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "types/ListItemCurrent.ts",
+					"line": 1,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/types/ListItemCurrent.ts#L1"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					{
+						"type": "literal",
+						"value": "false"
+					},
+					{
+						"type": "literal",
+						"value": "true"
+					},
+					{
+						"type": "literal",
+						"value": "page"
+					},
+					{
+						"type": "literal",
+						"value": "step"
+					},
+					{
+						"type": "literal",
+						"value": "location"
+					},
+					{
+						"type": "literal",
+						"value": "date"
+					},
+					{
+						"type": "literal",
+						"value": "time"
+					},
+					{
+						"type": "intrinsic",
+						"name": "undefined"
+					}
+				]
+			}
+		},
+		{
+			"id": 61,
+			"name": "ListItemElement",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/List/List.tsx",
+					"line": 28,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L28"
+				}
+			],
+			"type": {
+				"type": "reference",
+				"typeArguments": [
+					{
+						"type": "query",
+						"queryType": {
+							"type": "reference",
+							"id": 67,
+							"name": "ListItem"
+						}
+					}
+				],
+				"name": "React.ReactElement",
+				"qualifiedName": "React.ReactElement",
+				"package": "@types/react"
+			}
+		},
+		{
+			"id": 62,
+			"name": "ListItemElements",
+			"kind": 4194304,
+			"kindString": "Type alias",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/List/List.tsx",
+					"line": 29,
+					"character": 12,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L29"
+				}
+			],
+			"type": {
+				"type": "union",
+				"types": [
+					{
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 61,
+							"name": "ListItemElement"
+						}
+					},
+					{
+						"type": "reference",
+						"id": 61,
+						"name": "ListItemElement"
+					}
+				]
+			}
+		},
+		{
+			"id": 1,
+			"name": "AffixList",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/AffixList/AffixList.tsx",
+					"line": 54,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixList.tsx#L54"
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "AffixList",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Presents a list of affixed (prefixed or suffixed) items."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "AffixListItem",
+										"target": 13
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 3,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 9,
+								"name": "AffixListProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 13,
+			"name": "AffixListItem",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/AffixList/AffixListItem.tsx",
+					"line": 47,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/AffixList/AffixListItem.tsx#L47"
+				}
+			],
+			"signatures": [
+				{
+					"id": 14,
+					"name": "AffixListItem",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Presents an affixed list item."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "AffixList",
+										"target": 1
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 15,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 16,
+								"name": "AffixListItemProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 93,
+			"name": "CheckIcon",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "icons/CheckIcon.tsx",
+					"line": 11,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/icons/CheckIcon.tsx#L11"
+				}
+			],
+			"signatures": [
+				{
+					"id": 94,
+					"name": "CheckIcon",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Outputs a check icon."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "[Icons](/design-system/foundations/icons) for information on using icons."
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						]
+					},
+					"parameters": [
+						{
+							"id": 95,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 91,
+								"name": "IconProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 21,
+			"name": "Heading",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/Heading/Heading.tsx",
+					"line": 47,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Heading/Heading.tsx#L47"
+				}
+			],
+			"signatures": [
+				{
+					"id": 22,
+					"name": "Heading",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Outputs a heading relative to the current section scope."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@remarks",
+								"content": [
+									{
+										"kind": "text",
+										"text": "This will typically output "
+									},
+									{
+										"kind": "code",
+										"text": "`<h1...6>`"
+									},
+									{
+										"kind": "text",
+										"text": " elements; however, this will revert to showing\nheadings using "
+									},
+									{
+										"kind": "code",
+										"text": "`<div>`"
+									},
+									{
+										"kind": "text",
+										"text": " elements with the accompanying "
+									},
+									{
+										"kind": "code",
+										"text": "`role`"
+									},
+									{
+										"kind": "text",
+										"text": " and "
+									},
+									{
+										"kind": "code",
+										"text": "`aria-level`"
+									},
+									{
+										"kind": "text",
+										"text": "\nattributes for headings deeper than "
+									},
+									{
+										"kind": "code",
+										"text": "`<h6>`"
+									},
+									{
+										"kind": "text",
+										"text": ". Applications should keep heading levels\nas shallow as possible.\n\nHeading levels are automatically computed from the scope of the current section. If\nnecessary the "
+									},
+									{
+										"kind": "code",
+										"text": "`level`"
+									},
+									{
+										"kind": "text",
+										"text": " property can be used to define a deeper level that is relative\nto the current section scope."
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "SectionScope",
+										"target": 81
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 23,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 24,
+								"name": "HeadingProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 28,
+			"name": "Highlight",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/Highlight/Highlight.tsx",
+					"line": 19,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Highlight/Highlight.tsx#L19"
+				}
+			],
+			"signatures": [
+				{
+					"id": 29,
+					"name": "Highlight",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "An inline component to highlight inline text."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 30,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 31,
+								"name": "HighlightProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 33,
+			"name": "IconList",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/IconList/IconList.tsx",
+					"line": 56,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconList.tsx#L56"
+				}
+			],
+			"signatures": [
+				{
+					"id": 34,
+					"name": "IconList",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Presents a list of items with icons."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "IconListItem",
+										"target": 45
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 35,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 41,
+								"name": "IconListProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 45,
+			"name": "IconListItem",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/IconList/IconListItem.tsx",
+					"line": 44,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/IconList/IconListItem.tsx#L44"
+				}
+			],
+			"signatures": [
+				{
+					"id": 46,
+					"name": "IconListItem",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Presents an icon list item."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "IconList",
+										"target": 33
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 47,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 48,
+								"name": "IconListItemProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 53,
+			"name": "List",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/List/List.tsx",
+					"line": 63,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/List.tsx#L63"
+				}
+			],
+			"signatures": [
+				{
+					"id": 54,
+					"name": "List",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Presents a list of items."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "ListItem",
+										"target": 67
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 55,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 63,
+								"name": "ListProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 67,
+			"name": "ListItem",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/List/ListItem.tsx",
+					"line": 37,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/List/ListItem.tsx#L37"
+				}
+			],
+			"signatures": [
+				{
+					"id": 68,
+					"name": "ListItem",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Presents a list item."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "List",
+										"target": 53
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 69,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 70,
+								"name": "ListItemProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 74,
+			"name": "Quote",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/Quote/Quote.tsx",
+					"line": 35,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/Quote/Quote.tsx#L35"
+				}
+			],
+			"signatures": [
+				{
+					"id": 75,
+					"name": "Quote",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Use when quoting content."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 76,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 77,
+								"name": "QuoteProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 81,
+			"name": "SectionScope",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/SectionScope/SectionScope.tsx",
+					"line": 38,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/SectionScope/SectionScope.tsx#L38"
+				}
+			],
+			"signatures": [
+				{
+					"id": 82,
+					"name": "SectionScope",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Defines the scope of a section."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@remarks",
+								"content": [
+									{
+										"kind": "text",
+										"text": "This component is designed to be used alongside other sectioning elements; for instance,\nthe following would be a suitable usage:\n\n"
+									},
+									{
+										"kind": "code",
+										"text": "```tsx\n<section>\n  <SectionScope>\n    <Heading>Heading for this section</Heading>\n    <Heading level={2}>Sub heading within this section</Heading>\n  </SectionScope>\n</section>\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": []
+							},
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "inline-tag",
+										"tag": "@link",
+										"text": "Heading",
+										"target": 21
+									}
+								]
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 83,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 84,
+								"name": "SectionScopeProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		},
+		{
+			"id": 86,
+			"name": "TextIndent",
+			"kind": 64,
+			"kindString": "Function",
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "components/TextIndent/TextIndent.tsx",
+					"line": 19,
+					"character": 16,
+					"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/components/TextIndent/TextIndent.tsx#L19"
+				}
+			],
+			"signatures": [
+				{
+					"id": 87,
+					"name": "TextIndent",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Make information stand out from the rest of the content on a page."
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": []
+							}
+						],
+						"modifierTags": [
+							"@experimental"
+						]
+					},
+					"parameters": [
+						{
+							"id": 88,
+							"name": "props",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "The component properties."
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"id": 89,
+								"name": "TextIndentProps"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "JSX.Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Enumerations",
+			"children": [
+				4,
+				36,
+				56
+			]
+		},
+		{
+			"title": "Interfaces",
+			"children": [
+				16,
+				9,
+				24,
+				31,
+				48,
+				41,
+				91,
+				70,
+				63,
+				77,
+				84,
+				89
+			]
+		},
+		{
+			"title": "Type Aliases",
+			"children": [
+				7,
+				8,
+				39,
+				40,
+				99,
+				61,
+				62
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				1,
+				13,
+				93,
+				21,
+				28,
+				33,
+				45,
+				53,
+				67,
+				74,
+				81,
+				86
+			]
+		}
+	],
+	"sources": [
+		{
+			"fileName": "index.ts",
+			"line": 1,
+			"character": 0,
+			"url": "https://github.com/ONSdigital/design-system-react/blob/6314f36/src/index.ts#L1"
+		}
+	]
+}
