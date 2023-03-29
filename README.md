@@ -81,6 +81,41 @@ yarn build-static-preview
 Again the output goes into the `./dist` directory except this time it includes static
 `.html` files.
 
+## Creating a new release
+
+1. Ensure that you are on the latest commit of the `main` branch:
+
+    ```bash
+    git checkout main
+    git pull
+    ```
+
+2. Remove any existing `create/release` branch:
+
+    ```bash
+    git branch -D create/release
+    ```
+
+3. Create a new `create/release` branch:
+
+    ```bash
+    git checkout -b create/release
+    ```
+
+4. Bump the version number of the package in `package.json`.
+
+5. Commit this change; eg "Bump version to v1.2.3".
+
+6. Push this to the repository:
+
+    ```bash
+    git push --set-upstream origin create/release
+    ```
+
+7. The action of pushing this branch will trigger the creation of a new release. It may take a moment for the PR to appear in GitHub as the package is being built.
+
+8. A release entry and tag is automatically created upon approving and merging the PR.
+
 ## Recommended Visual Studio Code plugins for this project
 
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
