@@ -21,4 +21,7 @@ export { default as List__list_with_numbered_type } from "./components/List/exam
 export { default as Quote__quote_with_longer_content } from "./components/Quote/examples/quote-with-longer-content"
 export { default as Quote__quote_with_source } from "./components/Quote/examples/quote-with-source"
 export { default as Quote__quote_without_source } from "./components/Quote/examples/quote-without-source"
+export { default as QuoteT__quotet_with_longer_content } from "./components/QuoteT/examples/quotet-with-longer-content"
+export { default as QuoteT__quotet_with_source } from "./components/QuoteT/examples/quotet-with-source"
+export { default as QuoteT__quotet_without_source } from "./components/QuoteT/examples/quotet-without-source"
 export { default as TextIndent__text_indent_with_paragraphs } from "./components/TextIndent/examples/text-indent-with-paragraphs"
