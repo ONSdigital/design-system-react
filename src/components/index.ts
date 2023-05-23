@@ -6,3 +6,4 @@ export * from "./List";
 export * from "./Quote";
 export * from "./SectionScope";
 export * from "./TextIndent";
+export * from "./Panel";
