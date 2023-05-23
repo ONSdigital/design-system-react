@@ -40,6 +40,8 @@ export interface HeadingProps {
  * @param props The component properties.
  * @returns
  *
+ * @experimental
+ *
  * @see {@link SectionScope}
  */
 export function Heading(props: HeadingProps) : JSX.Element {

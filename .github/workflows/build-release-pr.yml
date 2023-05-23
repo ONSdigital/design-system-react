@@ -1,0 +1,81 @@
+name: Build and create release PR
+
+on:
+  push:
+    branches:
+      - create/release
+
+jobs:
+  build_package:
+    name: Build package and update version
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Get version from package.json
+        id: get-version
+        run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
+        
+      - name: Get current version from main branch
+        id: get-current-version
+        run: echo "CURRENT_VERSION=$(curl -s https://raw.githubusercontent.com/ONSdigital/design-system-react/main/package.json | jq -r '.version')" >> $GITHUB_ENV
+        
+      - name: Compare versions
+        if: env.PACKAGE_VERSION == env.CURRENT_VERSION
+        run: exit 1
+        env:
+          ERROR_MESSAGE: "Package version is the same as HEAD."
+        
+      - name: Replace version in readme.md
+        run: sed -i "s/\(https:\/\/github.com\/ONSdigital\/design-system-react#\)v[0-9]\.[0-9]\.[0-9]/\1v${{ env.PACKAGE_VERSION }}/g" README.md
+      
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: Install dependencies
+        run: yarn install
+      - name: Run yarn build-package
+        run: yarn build-package
+     
+      - name: Import GPG key
+        id: import-gpg
+        uses: crazy-max/ghaction-import-gpg@v5
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          fingerprint: ${{ secrets.GPG_FINGERPRINT }}
+          git_config_global: true
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+          git_tag_gpgsign: true 
+          
+      - name: Create release PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Create release PR"
+          body: "Automated pull request created for release v${{ env.PACKAGE_VERSION }}"
+          branch: create/release
+          base: main
+          title: "Build release - v${{ env.PACKAGE_VERSION }}"
+          labels: "release"
+          delete-branch: true
+          committer: ONS Design System <ons.design.system@ons.gov.uk>
+
+      - name: Update package version
+        run: |
+          echo "Updating package.json to version $PACKAGE_VERSION"
+          jq ".version = \"$PACKAGE_VERSION\"" package.json > temp.json && mv temp.json package.json
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "ONS Design System"
+          author_email: "ons.design.system@ons.gov.uk"
+          message: "Update package.json to version v${{ env.PACKAGE_VERSION }}"
+          commit: "-S"
+          tag_push: "--force"
+          push: true
+          new_branch: ""

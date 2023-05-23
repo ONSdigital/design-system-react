@@ -3,6 +3,9 @@ import React from "react";
 
 import { ListItem } from "./ListItem";
 
+/**
+ * @see {@link List}
+ */
 export enum ListType {
   /**
    * Show a bullet point to the side of each list item.
@@ -50,10 +53,12 @@ export interface ListProps {
 /**
  * Presents a list of items.
  *
- * @see {@link ListItem}
- *
  * @param props The component properties.
  * @returns
+ *
+ * @see {@link ListItem}
+ *
+ * @experimental
  */
 export function List(props: ListProps) : JSX.Element {
   const type = props.type ?? ListType.Bulleted;
