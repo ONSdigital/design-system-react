@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { ArrowForwardIcon } from "../../icons/ArrowForwardIcon";
 
+
 /**
  * Defines the types of panels available.
  */
@@ -31,7 +32,7 @@ export interface PanelProps {
   /**
    *  Icon to be added to the panel
    */
-  icon?: () => JSX.Element;
+  icon?:JSX.Element;
 
   /**
    * The content to display inside the panel.

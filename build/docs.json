@@ -48,7 +48,7 @@
 							"fileName": "components/AffixList/AffixList.tsx",
 							"line": 14,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L14"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L14"
 						}
 					],
 					"type": {
@@ -75,7 +75,7 @@
 							"fileName": "components/AffixList/AffixList.tsx",
 							"line": 18,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L18"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L18"
 						}
 					],
 					"type": {
@@ -98,7 +98,7 @@
 					"fileName": "components/AffixList/AffixList.tsx",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L10"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L10"
 				}
 			]
 		},
@@ -144,7 +144,7 @@
 							"fileName": "components/IconList/IconList.tsx",
 							"line": 18,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L18"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L18"
 						}
 					],
 					"type": {
@@ -171,7 +171,7 @@
 							"fileName": "components/IconList/IconList.tsx",
 							"line": 14,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L14"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L14"
 						}
 					],
 					"type": {
@@ -194,7 +194,7 @@
 					"fileName": "components/IconList/IconList.tsx",
 					"line": 10,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L10"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L10"
 				}
 			]
 		},
@@ -240,7 +240,7 @@
 							"fileName": "components/List/List.tsx",
 							"line": 25,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L25"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L25"
 						}
 					],
 					"type": {
@@ -267,7 +267,7 @@
 							"fileName": "components/List/List.tsx",
 							"line": 13,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L13"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L13"
 						}
 					],
 					"type": {
@@ -294,7 +294,7 @@
 							"fileName": "components/List/List.tsx",
 							"line": 17,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L17"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L17"
 						}
 					],
 					"type": {
@@ -321,7 +321,7 @@
 							"fileName": "components/List/List.tsx",
 							"line": 21,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L21"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L21"
 						}
 					],
 					"type": {
@@ -346,7 +346,7 @@
 					"fileName": "components/List/List.tsx",
 					"line": 9,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L9"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L9"
 				}
 			]
 		},
@@ -374,9 +374,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 12,
+							"line": 13,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L12"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L13"
 						}
 					],
 					"type": {
@@ -393,9 +393,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 11,
+							"line": 12,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L11"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L12"
 						}
 					],
 					"type": {
@@ -412,9 +412,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 8,
+							"line": 9,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L8"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L9"
 						}
 					],
 					"type": {
@@ -431,9 +431,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 9,
+							"line": 10,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L9"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L10"
 						}
 					],
 					"type": {
@@ -450,9 +450,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 10,
+							"line": 11,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L10"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L11"
 						}
 					],
 					"type": {
@@ -476,9 +476,9 @@
 			"sources": [
 				{
 					"fileName": "components/Panel/Panel.tsx",
-					"line": 7,
+					"line": 8,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L7"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L8"
 				}
 			]
 		},
@@ -526,7 +526,7 @@
 							"fileName": "components/AffixList/AffixListItem.tsx",
 							"line": 18,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixListItem.tsx#L18"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixListItem.tsx#L18"
 						}
 					],
 					"type": {
@@ -553,7 +553,7 @@
 							"fileName": "components/AffixList/AffixListItem.tsx",
 							"line": 34,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixListItem.tsx#L34"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixListItem.tsx#L34"
 						}
 					],
 					"type": {
@@ -593,7 +593,7 @@
 							"fileName": "components/AffixList/AffixListItem.tsx",
 							"line": 24,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixListItem.tsx#L24"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixListItem.tsx#L24"
 						}
 					],
 					"type": {
@@ -633,12 +633,12 @@
 							"fileName": "components/AffixList/AffixListItem.tsx",
 							"line": 30,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixListItem.tsx#L30"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixListItem.tsx#L30"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 118,
+						"id": 116,
 						"name": "ListItemCurrent"
 					}
 				}
@@ -659,7 +659,7 @@
 					"fileName": "components/AffixList/AffixListItem.tsx",
 					"line": 11,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixListItem.tsx#L11"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixListItem.tsx#L11"
 				}
 			]
 		},
@@ -707,7 +707,7 @@
 							"fileName": "components/AffixList/AffixList.tsx",
 							"line": 41,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L41"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L41"
 						}
 					],
 					"type": {
@@ -748,7 +748,7 @@
 							"fileName": "components/AffixList/AffixList.tsx",
 							"line": 37,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L37"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L37"
 						}
 					],
 					"type": {
@@ -775,7 +775,7 @@
 							"fileName": "components/AffixList/AffixList.tsx",
 							"line": 31,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L31"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L31"
 						}
 					],
 					"type": {
@@ -800,7 +800,7 @@
 					"fileName": "components/AffixList/AffixList.tsx",
 					"line": 27,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L27"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L27"
 				}
 			]
 		},
@@ -848,7 +848,7 @@
 							"fileName": "components/Heading/Heading.tsx",
 							"line": 24,
 							"character": 4,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Heading/Heading.tsx#L24"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Heading/Heading.tsx#L24"
 						}
 					],
 					"type": {
@@ -888,7 +888,7 @@
 							"fileName": "components/Heading/Heading.tsx",
 							"line": 20,
 							"character": 4,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Heading/Heading.tsx#L20"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Heading/Heading.tsx#L20"
 						}
 					],
 					"type": {
@@ -928,7 +928,7 @@
 							"fileName": "components/Heading/Heading.tsx",
 							"line": 14,
 							"character": 4,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Heading/Heading.tsx#L14"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Heading/Heading.tsx#L14"
 						}
 					],
 					"type": {
@@ -952,7 +952,7 @@
 					"fileName": "components/Heading/Heading.tsx",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Heading/Heading.tsx#L8"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Heading/Heading.tsx#L8"
 				}
 			]
 		},
@@ -1000,7 +1000,7 @@
 							"fileName": "components/Highlight/Highlight.tsx",
 							"line": 8,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Highlight/Highlight.tsx#L8"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Highlight/Highlight.tsx#L8"
 						}
 					],
 					"type": {
@@ -1022,7 +1022,7 @@
 					"fileName": "components/Highlight/Highlight.tsx",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Highlight/Highlight.tsx#L4"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Highlight/Highlight.tsx#L4"
 				}
 			]
 		},
@@ -1070,7 +1070,7 @@
 							"fileName": "components/IconList/IconListItem.tsx",
 							"line": 31,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconListItem.tsx#L31"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconListItem.tsx#L31"
 						}
 					],
 					"type": {
@@ -1110,7 +1110,7 @@
 							"fileName": "components/IconList/IconListItem.tsx",
 							"line": 21,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconListItem.tsx#L21"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconListItem.tsx#L21"
 						}
 					],
 					"type": {
@@ -1150,12 +1150,12 @@
 							"fileName": "components/IconList/IconListItem.tsx",
 							"line": 27,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconListItem.tsx#L27"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconListItem.tsx#L27"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 118,
+						"id": 116,
 						"name": "ListItemCurrent"
 					}
 				},
@@ -1178,7 +1178,7 @@
 							"fileName": "components/IconList/IconListItem.tsx",
 							"line": 15,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconListItem.tsx#L15"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconListItem.tsx#L15"
 						}
 					],
 					"type": {
@@ -1205,7 +1205,7 @@
 					"fileName": "components/IconList/IconListItem.tsx",
 					"line": 11,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconListItem.tsx#L11"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconListItem.tsx#L11"
 				}
 			]
 		},
@@ -1253,7 +1253,7 @@
 							"fileName": "components/IconList/IconList.tsx",
 							"line": 43,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L43"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L43"
 						}
 					],
 					"type": {
@@ -1294,7 +1294,7 @@
 							"fileName": "components/IconList/IconList.tsx",
 							"line": 39,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L39"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L39"
 						}
 					],
 					"type": {
@@ -1336,7 +1336,7 @@
 							"fileName": "components/IconList/IconList.tsx",
 							"line": 33,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L33"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L33"
 						}
 					],
 					"type": {
@@ -1361,12 +1361,12 @@
 					"fileName": "components/IconList/IconList.tsx",
 					"line": 27,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L27"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L27"
 				}
 			]
 		},
 		{
-			"id": 107,
+			"id": 105,
 			"name": "IconProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -1381,7 +1381,7 @@
 			},
 			"children": [
 				{
-					"id": 108,
+					"id": 106,
 					"name": "className",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1412,7 +1412,7 @@
 							"fileName": "icons/IconProps.ts",
 							"line": 10,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/icons/IconProps.ts#L10"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/icons/IconProps.ts#L10"
 						}
 					],
 					"type": {
@@ -1425,7 +1425,7 @@
 				{
 					"title": "Properties",
 					"children": [
-						108
+						106
 					]
 				}
 			],
@@ -1434,7 +1434,7 @@
 					"fileName": "icons/IconProps.ts",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/icons/IconProps.ts#L4"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/icons/IconProps.ts#L4"
 				}
 			]
 		},
@@ -1482,7 +1482,7 @@
 							"fileName": "components/List/ListItem.tsx",
 							"line": 24,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/ListItem.tsx#L24"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/ListItem.tsx#L24"
 						}
 					],
 					"type": {
@@ -1522,7 +1522,7 @@
 							"fileName": "components/List/ListItem.tsx",
 							"line": 14,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/ListItem.tsx#L14"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/ListItem.tsx#L14"
 						}
 					],
 					"type": {
@@ -1562,12 +1562,12 @@
 							"fileName": "components/List/ListItem.tsx",
 							"line": 20,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/ListItem.tsx#L20"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/ListItem.tsx#L20"
 						}
 					],
 					"type": {
 						"type": "reference",
-						"id": 118,
+						"id": 116,
 						"name": "ListItemCurrent"
 					}
 				}
@@ -1587,7 +1587,7 @@
 					"fileName": "components/List/ListItem.tsx",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/ListItem.tsx#L8"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/ListItem.tsx#L8"
 				}
 			]
 		},
@@ -1635,7 +1635,7 @@
 							"fileName": "components/List/List.tsx",
 							"line": 50,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L50"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L50"
 						}
 					],
 					"type": {
@@ -1676,7 +1676,7 @@
 							"fileName": "components/List/List.tsx",
 							"line": 46,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L46"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L46"
 						}
 					],
 					"type": {
@@ -1718,7 +1718,7 @@
 							"fileName": "components/List/List.tsx",
 							"line": 40,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L40"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L40"
 						}
 					],
 					"type": {
@@ -1743,7 +1743,7 @@
 					"fileName": "components/List/List.tsx",
 					"line": 34,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L34"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L34"
 				}
 			]
 		},
@@ -1789,9 +1789,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 29,
+							"line": 30,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L29"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L30"
 						}
 					],
 					"type": {
@@ -1800,7 +1800,7 @@
 					}
 				},
 				{
-					"id": 106,
+					"id": 104,
 					"name": "children",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1816,9 +1816,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 39,
+							"line": 40,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L39"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L40"
 						}
 					],
 					"type": {
@@ -1834,54 +1834,27 @@
 					"flags": {
 						"isOptional": true
 					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "Icon to be added to the panel"
+							}
+						]
+					},
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 34,
+							"line": 35,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L34"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L35"
 						}
 					],
 					"type": {
-						"type": "reflection",
-						"declaration": {
-							"id": 104,
-							"name": "__type",
-							"kind": 65536,
-							"kindString": "Type literal",
-							"flags": {},
-							"sources": [
-								{
-									"fileName": "components/Panel/Panel.tsx",
-									"line": 34,
-									"character": 9,
-									"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L34"
-								}
-							],
-							"signatures": [
-								{
-									"id": 105,
-									"name": "__type",
-									"kind": 4096,
-									"kindString": "Call signature",
-									"flags": {},
-									"comment": {
-										"summary": [
-											{
-												"kind": "text",
-												"text": "Icon to be added to the panel"
-											}
-										]
-									},
-									"type": {
-										"type": "reference",
-										"name": "Element",
-										"qualifiedName": "global.JSX.Element",
-										"package": "@types/react"
-									}
-								}
-							]
-						}
+						"type": "reference",
+						"name": "Element",
+						"qualifiedName": "global.JSX.Element",
+						"package": "@types/react"
 					}
 				},
 				{
@@ -1914,9 +1887,9 @@
 					"sources": [
 						{
 							"fileName": "components/Panel/Panel.tsx",
-							"line": 24,
+							"line": 25,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L24"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L25"
 						}
 					],
 					"type": {
@@ -1931,7 +1904,7 @@
 					"title": "Properties",
 					"children": [
 						102,
-						106,
+						104,
 						103,
 						101
 					]
@@ -1940,9 +1913,9 @@
 			"sources": [
 				{
 					"fileName": "components/Panel/Panel.tsx",
-					"line": 18,
+					"line": 19,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L18"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L19"
 				}
 			]
 		},
@@ -1990,7 +1963,7 @@
 							"fileName": "components/Quote/Quote.tsx",
 							"line": 24,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Quote/Quote.tsx#L24"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Quote/Quote.tsx#L24"
 						}
 					],
 					"type": {
@@ -2030,7 +2003,7 @@
 							"fileName": "components/Quote/Quote.tsx",
 							"line": 20,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Quote/Quote.tsx#L20"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Quote/Quote.tsx#L20"
 						}
 					],
 					"type": {
@@ -2070,7 +2043,7 @@
 							"fileName": "components/Quote/Quote.tsx",
 							"line": 14,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Quote/Quote.tsx#L14"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Quote/Quote.tsx#L14"
 						}
 					],
 					"type": {
@@ -2094,7 +2067,7 @@
 					"fileName": "components/Quote/Quote.tsx",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Quote/Quote.tsx#L8"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Quote/Quote.tsx#L8"
 				}
 			]
 		},
@@ -2142,7 +2115,7 @@
 							"fileName": "components/SectionScope/SectionScope.tsx",
 							"line": 12,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/SectionScope/SectionScope.tsx#L12"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/SectionScope/SectionScope.tsx#L12"
 						}
 					],
 					"type": {
@@ -2164,7 +2137,7 @@
 					"fileName": "components/SectionScope/SectionScope.tsx",
 					"line": 8,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/SectionScope/SectionScope.tsx#L8"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/SectionScope/SectionScope.tsx#L8"
 				}
 			]
 		},
@@ -2212,7 +2185,7 @@
 							"fileName": "components/TextIndent/TextIndent.tsx",
 							"line": 8,
 							"character": 2,
-							"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/TextIndent/TextIndent.tsx#L8"
+							"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/TextIndent/TextIndent.tsx#L8"
 						}
 					],
 					"type": {
@@ -2234,7 +2207,7 @@
 					"fileName": "components/TextIndent/TextIndent.tsx",
 					"line": 4,
 					"character": 17,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/TextIndent/TextIndent.tsx#L4"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/TextIndent/TextIndent.tsx#L4"
 				}
 			]
 		},
@@ -2249,7 +2222,7 @@
 					"fileName": "components/AffixList/AffixList.tsx",
 					"line": 21,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L21"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L21"
 				}
 			],
 			"type": {
@@ -2280,7 +2253,7 @@
 					"fileName": "components/AffixList/AffixList.tsx",
 					"line": 22,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L22"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L22"
 				}
 			],
 			"type": {
@@ -2313,7 +2286,7 @@
 					"fileName": "components/IconList/IconList.tsx",
 					"line": 21,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L21"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L21"
 				}
 			],
 			"type": {
@@ -2344,7 +2317,7 @@
 					"fileName": "components/IconList/IconList.tsx",
 					"line": 22,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L22"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L22"
 				}
 			],
 			"type": {
@@ -2367,7 +2340,7 @@
 			}
 		},
 		{
-			"id": 118,
+			"id": 116,
 			"name": "ListItemCurrent",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -2377,7 +2350,7 @@
 					"fileName": "types/ListItemCurrent.ts",
 					"line": 1,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/types/ListItemCurrent.ts#L1"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/types/ListItemCurrent.ts#L1"
 				}
 			],
 			"type": {
@@ -2433,7 +2406,7 @@
 					"fileName": "components/List/List.tsx",
 					"line": 28,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L28"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L28"
 				}
 			],
 			"type": {
@@ -2464,7 +2437,7 @@
 					"fileName": "components/List/List.tsx",
 					"line": 29,
 					"character": 12,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L29"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L29"
 				}
 			],
 			"type": {
@@ -2497,7 +2470,7 @@
 					"fileName": "components/AffixList/AffixList.tsx",
 					"line": 54,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixList.tsx#L54"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixList.tsx#L54"
 				}
 			],
 			"signatures": [
@@ -2577,7 +2550,7 @@
 					"fileName": "components/AffixList/AffixListItem.tsx",
 					"line": 47,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/AffixList/AffixListItem.tsx#L47"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/AffixList/AffixListItem.tsx#L47"
 				}
 			],
 			"signatures": [
@@ -2647,7 +2620,7 @@
 			]
 		},
 		{
-			"id": 109,
+			"id": 107,
 			"name": "ArrowForwardIcon",
 			"kind": 64,
 			"kindString": "Function",
@@ -2657,12 +2630,12 @@
 					"fileName": "icons/ArrowForwardIcon.tsx",
 					"line": 11,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/icons/ArrowForwardIcon.tsx#L11"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/icons/ArrowForwardIcon.tsx#L11"
 				}
 			],
 			"signatures": [
 				{
-					"id": 110,
+					"id": 108,
 					"name": "ArrowForwardIcon",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -2692,7 +2665,7 @@
 					},
 					"parameters": [
 						{
-							"id": 111,
+							"id": 109,
 							"name": "props",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -2707,7 +2680,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 107,
+								"id": 105,
 								"name": "IconProps"
 							}
 						}
@@ -2722,7 +2695,7 @@
 			]
 		},
 		{
-			"id": 112,
+			"id": 110,
 			"name": "CheckIcon",
 			"kind": 64,
 			"kindString": "Function",
@@ -2732,12 +2705,12 @@
 					"fileName": "icons/CheckIcon.tsx",
 					"line": 11,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/icons/CheckIcon.tsx#L11"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/icons/CheckIcon.tsx#L11"
 				}
 			],
 			"signatures": [
 				{
-					"id": 113,
+					"id": 111,
 					"name": "CheckIcon",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -2767,7 +2740,7 @@
 					},
 					"parameters": [
 						{
-							"id": 114,
+							"id": 112,
 							"name": "props",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -2782,7 +2755,7 @@
 							},
 							"type": {
 								"type": "reference",
-								"id": 107,
+								"id": 105,
 								"name": "IconProps"
 							}
 						}
@@ -2807,7 +2780,7 @@
 					"fileName": "components/Heading/Heading.tsx",
 					"line": 47,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Heading/Heading.tsx#L47"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Heading/Heading.tsx#L47"
 				}
 			],
 			"signatures": [
@@ -2944,7 +2917,7 @@
 					"fileName": "components/Highlight/Highlight.tsx",
 					"line": 19,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Highlight/Highlight.tsx#L19"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Highlight/Highlight.tsx#L19"
 				}
 			],
 			"signatures": [
@@ -3013,7 +2986,7 @@
 					"fileName": "components/IconList/IconList.tsx",
 					"line": 56,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconList.tsx#L56"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconList.tsx#L56"
 				}
 			],
 			"signatures": [
@@ -3093,7 +3066,7 @@
 					"fileName": "components/IconList/IconListItem.tsx",
 					"line": 44,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/IconList/IconListItem.tsx#L44"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/IconList/IconListItem.tsx#L44"
 				}
 			],
 			"signatures": [
@@ -3173,7 +3146,7 @@
 					"fileName": "components/List/List.tsx",
 					"line": 63,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/List.tsx#L63"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/List.tsx#L63"
 				}
 			],
 			"signatures": [
@@ -3253,7 +3226,7 @@
 					"fileName": "components/List/ListItem.tsx",
 					"line": 37,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/List/ListItem.tsx#L37"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/List/ListItem.tsx#L37"
 				}
 			],
 			"signatures": [
@@ -3331,9 +3304,9 @@
 			"sources": [
 				{
 					"fileName": "components/Panel/Panel.tsx",
-					"line": 64,
+					"line": 65,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Panel/Panel.tsx#L64"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Panel/Panel.tsx#L65"
 				}
 			],
 			"signatures": [
@@ -3420,7 +3393,7 @@
 					"fileName": "components/Quote/Quote.tsx",
 					"line": 35,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/Quote/Quote.tsx#L35"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/Quote/Quote.tsx#L35"
 				}
 			],
 			"signatures": [
@@ -3489,7 +3462,7 @@
 					"fileName": "components/SectionScope/SectionScope.tsx",
 					"line": 38,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/SectionScope/SectionScope.tsx#L38"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/SectionScope/SectionScope.tsx#L38"
 				}
 			],
 			"signatures": [
@@ -3582,7 +3555,7 @@
 					"fileName": "components/TextIndent/TextIndent.tsx",
 					"line": 19,
 					"character": 16,
-					"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/components/TextIndent/TextIndent.tsx#L19"
+					"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/components/TextIndent/TextIndent.tsx#L19"
 				}
 			],
 			"signatures": [
@@ -3660,7 +3633,7 @@
 				31,
 				48,
 				41,
-				107,
+				105,
 				70,
 				63,
 				100,
@@ -3676,7 +3649,7 @@
 				8,
 				39,
 				40,
-				118,
+				116,
 				61,
 				62
 			]
@@ -3686,8 +3659,8 @@
 			"children": [
 				1,
 				13,
-				109,
-				112,
+				107,
+				110,
 				21,
 				28,
 				33,
@@ -3706,7 +3679,7 @@
 			"fileName": "index.ts",
 			"line": 1,
 			"character": 0,
-			"url": "https://github.com/ONSdigital/design-system-react/blob/7d8052e/src/index.ts#L1"
+			"url": "https://github.com/ONSdigital/design-system-react/blob/35eda33/src/index.ts#L1"
 		}
 	]
 }
