@@ -18,6 +18,8 @@ export { default as List__list_with_current_item } from "./components/List/examp
 export { default as List__list_with_dashed_type } from "./components/List/examples/list-with-dashed-type"
 export { default as List__list_with_default_type } from "./components/List/examples/list-with-default-type"
 export { default as List__list_with_numbered_type } from "./components/List/examples/list-with-numbered-type"
+export { default as Panel__panel_success } from "./components/Panel/examples/panel-success"
+export { default as Panel__panel_warning } from "./components/Panel/examples/panel-warning"
 export { default as Quote__quote_with_longer_content } from "./components/Quote/examples/quote-with-longer-content"
 export { default as Quote__quote_with_source } from "./components/Quote/examples/quote-with-source"
 export { default as Quote__quote_without_source } from "./components/Quote/examples/quote-without-source"
