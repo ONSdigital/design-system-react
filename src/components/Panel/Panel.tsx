@@ -52,8 +52,8 @@ const ASSISTIVE_TEXT_DEFAULTS = new Map<PanelType, string>([
 ]);
 
 const ICON_DEFAULTS = new Map<PanelType, any>([
-  [PanelType.Announcement, () => <ArrowForwardIcon />],
-  [PanelType.Warning, () => <>!</>],
+  [PanelType.Announcement, <ArrowForwardIcon />],
+  [PanelType.Warning, <>!</>],
 ]);
 
 /**
@@ -80,7 +80,7 @@ export function Panel(props: PanelProps): JSX.Element {
       )}
       {Icon !== undefined && (
         <div className="ons-panel__icon ds-panel__icon" aria-hidden="true">
-          <Icon />
+          {Icon}
         </div>
       )}
       <div className="ons-panel__body ds-panel__body">{props.children}</div>
