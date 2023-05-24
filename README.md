@@ -40,6 +40,22 @@ The port can be overridden if desired:
 ```bash
 export TEST_PORT=5000; yarn start
 ```
+## Preview component docs locally
+
+To view the documentation of the components created by typedoc you can run the following commands : 
+
+To view all the docs for all components run: 
+```bash
+yarn build:docs-preview
+```
+
+To view only the docs related to one component you can use 
+
+```bash
+yarn build:doc-preview path-to-component-index.tsx
+```
+
+These previews are not saved on git. 
 
 ## Testing
 
