@@ -9,39 +9,39 @@ jobs:
   build_package:
     name: Build package and update version
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
 
       - name: Get version from package.json
         id: get-version
         run: echo "PACKAGE_VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
-        
+
       - name: Get current version from main branch
         id: get-current-version
         run: echo "CURRENT_VERSION=$(curl -s https://raw.githubusercontent.com/ONSdigital/design-system-react/main/package.json | jq -r '.version')" >> $GITHUB_ENV
-        
+
       - name: Compare versions
         if: env.PACKAGE_VERSION == env.CURRENT_VERSION
         run: exit 1
         env:
           ERROR_MESSAGE: "Package version is the same as HEAD."
-        
+
       - name: Replace version in readme.md
         run: sed -i "s/\(https:\/\/github.com\/ONSdigital\/design-system-react#\)v[0-9]\.[0-9]\.[0-9]/\1v${{ env.PACKAGE_VERSION }}/g" README.md
-      
-      - uses: actions/setup-node@v3
+
+      - uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
         with:
           node-version: '14'
       - name: Install dependencies
         run: yarn install
       - name: Run yarn build-package
         run: yarn build-package
-     
+
       - name: Import GPG key
         id: import-gpg
-        uses: crazy-max/ghaction-import-gpg@v5
+        uses: crazy-max/ghaction-import-gpg@d6f3f49f3345e29369fe57596a3ca8f94c4d2ca7 # v5.4.0
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
@@ -49,10 +49,10 @@ jobs:
           git_config_global: true
           git_user_signingkey: true
           git_commit_gpgsign: true
-          git_tag_gpgsign: true 
-          
+          git_tag_gpgsign: true
+
       - name: Create release PR
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@38e0b6e68b4c852a5500a94740f0e535e0d7ba54 # v4.2.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Create release PR"
@@ -70,7 +70,7 @@ jobs:
           jq ".version = \"$PACKAGE_VERSION\"" package.json > temp.json && mv temp.json package.json
 
       - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
         with:
           author_name: "ONS Design System"
           author_email: "ons.design.system@ons.gov.uk"
