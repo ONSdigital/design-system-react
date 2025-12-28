@@ -11,6 +11,8 @@
   "scripts": {
     "build": "export NODE_ENV=production; yarn clean && yarn build:examples && yarn build:docs && yarn build:styles",
     "build:docs": "typedoc --entryPoints src/index.ts --json ./dist/docs.json",
+    "build:docs-preview":"mkdir localDocumentation; typedoc --out localDocumentation  --name 'My Documentation' src/components/index.ts" ,
+    "build:doc-preview": "mkdir localDocumentation; typedoc --out localDocumentation  --name 'My Documentation'",
     "build:examples": "yarn build:examples:refresh && rollup -c rollup.config.examples.js",
     "build:examples:refresh": "ts-node ./scripts/refresh-example-components",
     "build:styles": "ts-node ./scripts/build-styles",
